@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ai-leverage/technique.schema.json",
+  "title": "AI Leverage Technique",
+  "type": "object",
+  "required": ["id", "title", "category", "status", "difficulty", "risk", "human_gate", "evidence_level", "last_verified"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^AI-[A-Z]+-[0-9]{3}$" },
+    "title": { "type": "string", "minLength": 3 },
+    "category": { "enum": ["discover", "decide", "create", "operate", "verify", "compound"] },
+    "status": { "enum": ["idea", "experimental", "validated", "field-tested", "deprecated"] },
+    "difficulty": { "enum": ["beginner", "intermediate", "advanced"] },
+    "risk": { "enum": ["low", "medium", "high"] },
+    "human_gate": { "type": "string", "minLength": 3 },
+    "evidence_level": { "enum": ["concept", "one-off-demo", "reproducible", "multi-context", "operational"] },
+    "last_verified": { "type": "string", "format": "date" }
+  },
+  "additionalProperties": true
+}

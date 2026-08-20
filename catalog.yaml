@@ -1,0 +1,9 @@
+schemaVersion: 1
+generatedFrom: "content/techniques"
+techniques:
+  - id: "AI-DISCOVER-001"
+    title: "Constraint compilation"
+    category: "discover"
+    status: "experimental"
+    evidenceLevel: "concept"
+    path: "content/techniques/discover/constraint-compilation.md"
