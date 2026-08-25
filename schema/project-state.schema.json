@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ai-leverage/project-state.schema.json",
+  "title": "AI Leverage Library canonical project state",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "reconciledAt",
+    "validationPolicy",
+    "project",
+    "goals",
+    "capabilities",
+    "journeys",
+    "decisions",
+    "integrations",
+    "risks",
+    "blockers",
+    "proofEvents",
+    "commercialEvidence",
+    "nextActions"
+  ],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "reconciledAt": {"type": "string", "format": "date"},
+    "validationPolicy": {
+      "type": "object",
+      "required": ["maxVerificationAgeDays"],
+      "properties": {"maxVerificationAgeDays": {"type": "integer", "minimum": 1}},
+      "additionalProperties": false
+    },
+    "project": {
+      "type": "object",
+      "required": ["id", "name", "repository", "purpose", "archetype", "primaryUser", "economicBuyer", "problemSolved", "stage", "deploymentTarget"]
+    },
+    "goals": {"type": "array", "minItems": 4},
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "lifecycle_state", "confidence", "evidence", "dependencies", "blockers", "last_verified", "owner_or_authority", "is_current"]
+      }
+    },
+    "journeys": {"type": "array", "minItems": 1},
+    "decisions": {"type": "array"},
+    "integrations": {"type": "array"},
+    "risks": {"type": "array"},
+    "blockers": {"type": "array"},
+    "proofEvents": {"type": "array", "minItems": 1},
+    "commercialEvidence": {"type": "array"},
+    "nextActions": {"type": "array", "maxItems": 5}
+  },
+  "additionalProperties": true
+}

@@ -45,6 +45,8 @@ CATALOG.md           Human-readable entry point
 4. Update `catalog.yaml` to match the canonical card.
 5. Run `npm run validate`.
 
+For project-wide capability, evidence, decision, blocker, and next-proof state, start with [PROJECT_STATE.md](PROJECT_STATE.md). Its machine-readable counterpart is [`.project/state.json`](.project/state.json), and `npm run validate:project-state` checks obvious drift without inferring semantic truth.
+
 ## Technique lifecycle
 
 ```text
@@ -68,4 +70,4 @@ Status meanings:
 
 ## Current state
 
-Version 0.1.0 establishes the repository contract, templates, validation, CI, and one seed technique. It does not yet claim a complete or field-validated library.
+Version 0.1.0 establishes the repository contract, templates, validation, CI configuration, and one seed technique. It does not yet claim a complete, operationally verified, or field-validated library. See [the executive state report](docs/project/EXECUTIVE_STATE.md) for the current evidence reconciliation.

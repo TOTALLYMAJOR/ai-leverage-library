@@ -1,0 +1,314 @@
+{
+  "$schema": "../schema/project-state.schema.json",
+  "schemaVersion": 1,
+  "reconciledAt": "2026-08-25",
+  "validationPolicy": {
+    "maxVerificationAgeDays": 90
+  },
+  "project": {
+    "id": "ai-leverage-library",
+    "name": "AI Leverage Library",
+    "repository": "https://github.com/TOTALLYMAJOR/ai-leverage-library",
+    "purpose": "A Git-native, evidence-aware library of reproducible AI techniques organized by outcome rather than provider.",
+    "archetype": "library/package and developer utility",
+    "primaryUser": "Practitioners and AI agents seeking reproducible, authority-bounded AI workflows",
+    "economicBuyer": "UNKNOWN",
+    "problemSolved": "Useful AI workflows are commonly scattered across prompts, demonstrations, and tribal knowledge without reproducible verification or explicit human authority boundaries.",
+    "stage": "0.1.0 repository scaffold with one seed technique; product use and organizational value are UNVERIFIED",
+    "deploymentTarget": "UNVERIFIED - a static documentation site or PWA is specified, but no provider or deployment configuration exists"
+  },
+  "goals": [
+    {
+      "id": "GOAL-TECHNICAL",
+      "type": "technical",
+      "statement": "Maintain portable technique cards, catalogs, and evidence contracts that fail visibly when their structural claims drift.",
+      "state": "IMPLEMENTED",
+      "evidence": ["README.md", "schema/technique.schema.json", "scripts/validate.mjs"]
+    },
+    {
+      "id": "GOAL-USER",
+      "type": "user",
+      "statement": "Enable a practitioner or agent to find, apply, and verify an appropriate technique without hidden context.",
+      "state": "SPECIFIED",
+      "evidence": ["README.md", "CATALOG.md"]
+    },
+    {
+      "id": "GOAL-OPERATIONAL",
+      "type": "operational",
+      "statement": "Make technique publication and lifecycle promotion reproducible, reviewable, and resistant to evidence inflation.",
+      "state": "IMPLEMENTED",
+      "evidence": ["AGENTS.md", "CONTRIBUTING.md", ".github/workflows/validate.yml"]
+    },
+    {
+      "id": "GOAL-ORGANIZATIONAL",
+      "type": "organizational",
+      "statement": "Demonstrate that the library improves real AI-assisted work through retained outcome evidence.",
+      "state": "UNVERIFIED",
+      "evidence": []
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "CAP-001",
+      "name": "Canonical technique cards",
+      "description": "Store outcome-oriented technique definitions under content/techniques with explicit verification, risk, and human authority fields.",
+      "lifecycle_state": "IMPLEMENTED",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "source", "path": "content/techniques/discover/constraint-compilation.md", "detail": "Seed canonical card"},
+        {"type": "governance", "path": "AGENTS.md", "detail": "Declares technique cards canonical"}
+      ],
+      "dependencies": [],
+      "blockers": [],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "Repository maintainers; human review for authority changes and field-tested promotion",
+      "is_current": true
+    },
+    {
+      "id": "CAP-002",
+      "name": "Technique contract and catalog drift validation",
+      "description": "Check required card metadata, allowed values, unique IDs, category placement, and catalog agreement.",
+      "lifecycle_state": "TESTED",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "source", "path": "scripts/validate.mjs", "detail": "No-dependency validator"},
+        {"type": "test-result", "path": "scripts/validate.mjs", "command": "npm run validate", "outcome": "PASS", "detail": "The exact committed snapshot passed technique and project-state validation on 2026-08-25", "observed_at": "2026-08-25"}
+      ],
+      "dependencies": ["CAP-001"],
+      "blockers": [],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "Repository maintainers",
+      "is_current": true
+    },
+    {
+      "id": "CAP-003",
+      "name": "Human-readable and machine-readable catalog",
+      "description": "Expose published technique metadata in CATALOG.md and catalog.yaml while cards remain canonical.",
+      "lifecycle_state": "IMPLEMENTED",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "source", "path": "CATALOG.md", "detail": "Human navigation"},
+        {"type": "source", "path": "catalog.yaml", "detail": "Machine index"}
+      ],
+      "dependencies": ["CAP-001", "CAP-002"],
+      "blockers": [],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "Canonical cards control catalog content",
+      "is_current": true
+    },
+    {
+      "id": "CAP-004",
+      "name": "Constraint Compilation workflow",
+      "description": "Turn scattered constraints into an inspectable, authority-bounded outcome contract.",
+      "lifecycle_state": "SPECIFIED",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {"type": "source", "path": "content/techniques/discover/constraint-compilation.md", "detail": "Workflow and verification are documented; no retained trial is present"}
+      ],
+      "dependencies": ["CAP-001"],
+      "blockers": ["BLK-001"],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "Human reviewer for any promotion beyond specified",
+      "is_current": true
+    },
+    {
+      "id": "CAP-005",
+      "name": "Pull-request and main-branch validation configuration",
+      "description": "Configure GitHub Actions to run repository validation on pull requests and pushes to main.",
+      "lifecycle_state": "IMPLEMENTED",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "source", "path": ".github/workflows/validate.yml", "detail": "Workflow configuration exists"}
+      ],
+      "dependencies": ["CAP-002"],
+      "blockers": [],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "GitHub Actions provider acknowledgement is required for operational proof",
+      "is_current": true
+    },
+    {
+      "id": "CAP-006",
+      "name": "Searchable documentation site or PWA",
+      "description": "Provide a searchable user-facing adapter over the portable content core.",
+      "lifecycle_state": "SPECIFIED",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "roadmap", "path": "README.md", "detail": "Listed as delivery roadmap item 1"}
+      ],
+      "dependencies": ["CAP-001", "CAP-003"],
+      "blockers": [],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "UNKNOWN",
+      "is_current": true
+    },
+    {
+      "id": "CAP-007",
+      "name": "Codex skill adapter",
+      "description": "Retrieve and apply relevant canonical techniques through a Codex skill.",
+      "lifecycle_state": "SPECIFIED",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "roadmap", "path": "README.md", "detail": "Listed as delivery roadmap item 2"}
+      ],
+      "dependencies": ["CAP-001", "CAP-003"],
+      "blockers": [],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "UNKNOWN",
+      "is_current": true
+    },
+    {
+      "id": "CAP-008",
+      "name": "Catalog CLI",
+      "description": "Support search, creation, recommendation, and validation from a small command-line adapter.",
+      "lifecycle_state": "SPECIFIED",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "roadmap", "path": "README.md", "detail": "Listed as delivery roadmap item 3"}
+      ],
+      "dependencies": ["CAP-001", "CAP-003"],
+      "blockers": [],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "UNKNOWN",
+      "is_current": true
+    },
+    {
+      "id": "CAP-009",
+      "name": "MCP adapter",
+      "description": "Expose stabilized catalog and retrieval contracts through an MCP server.",
+      "lifecycle_state": "IDEA",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "roadmap", "path": "README.md", "detail": "Explicitly deferred until catalog and retrieval contracts stabilize"}
+      ],
+      "dependencies": ["CAP-003", "CAP-008"],
+      "blockers": [],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "UNKNOWN",
+      "is_current": true
+    },
+    {
+      "id": "CAP-010",
+      "name": "Canonical project state and drift detection",
+      "description": "Keep project intent, capability state, decisions, blockers, proof, and uncertainty machine-checkable and human-readable.",
+      "lifecycle_state": "TESTED",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "source", "path": ".project/state.json", "detail": "Machine-readable ledger"},
+        {"type": "source", "path": "scripts/validate-project-state.mjs", "detail": "Drift validator"},
+        {"type": "test-result", "path": "scripts/validate-project-state.mjs", "command": "npm run validate:project-state", "outcome": "PASS", "observed_at": "2026-08-25", "detail": "Local structural and drift checks passed"}
+      ],
+      "dependencies": [],
+      "blockers": [],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "Repository maintainers; semantic state changes require evidence and any designated human gate",
+      "is_current": true
+    },
+    {
+      "id": "CAP-011",
+      "name": "Experiment, playbook, and case-study retention scaffolds",
+      "description": "Provide locations and templates for trials, reusable sequences, outcomes, and useful failures.",
+      "lifecycle_state": "IMPLEMENTED",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "source", "path": "templates/experiment-log.md", "detail": "Experiment template"},
+        {"type": "source", "path": "templates/playbook.md", "detail": "Playbook template"},
+        {"type": "source", "path": "content/case-studies/.gitkeep", "detail": "Case-study location"}
+      ],
+      "dependencies": [],
+      "blockers": ["BLK-001"],
+      "last_verified": "2026-08-25",
+      "owner_or_authority": "Repository contributors and human reviewers",
+      "is_current": true
+    }
+  ],
+  "journeys": [
+    {
+      "id": "JOURNEY-PRIMARY",
+      "name": "Discover and apply a governed AI technique",
+      "kind": "primary",
+      "status": "PARTIALLY_IMPLEMENTED",
+      "trigger": "A practitioner or AI agent has an outcome or problem suited to an AI-assisted workflow",
+      "actor": "Practitioner or AI agent under human authority",
+      "action": "Find a technique, supply required inputs, execute its workflow, and perform claim-matched verification",
+      "stateChange": "An ad hoc AI attempt becomes a bounded, inspectable workflow result",
+      "authorityOrEvidence": "Technique card, retained verification evidence, and required human review",
+      "nextState": "Retain a result or experiment and reassess the technique's evidence status",
+      "outcome": "A useful result whose limits and authority are explicit",
+      "evidence": ["CATALOG.md", "content/techniques/discover/constraint-compilation.md"],
+      "missingProof": ["No retained independent user application or measured outcome exists in the repository"],
+      "blockers": ["BLK-001", "BLK-003"]
+    },
+    {
+      "id": "JOURNEY-AUTHOR",
+      "name": "Author and publish a technique",
+      "kind": "supporting",
+      "status": "IMPLEMENTED",
+      "evidence": ["CONTRIBUTING.md", "templates/technique-card.md", "scripts/validate.mjs"],
+      "missingProof": ["A retained example of a newly published technique completing the entire review workflow"],
+      "blockers": []
+    }
+  ],
+  "decisions": [
+    {"id": "DEC-001", "status": "ACTIVE", "summary": "Technique cards are canonical; catalogs are derived navigation.", "evidence": ["AGENTS.md", "CATALOG.md"]},
+    {"id": "DEC-002", "status": "ACTIVE", "summary": "Organize techniques by outcomes rather than vendors or models.", "evidence": ["README.md"]},
+    {"id": "DEC-003", "status": "ACTIVE", "summary": "Evidence levels and human authority gates constrain lifecycle promotion.", "evidence": ["AGENTS.md", "CONTRIBUTING.md"]},
+    {"id": "DEC-004", "status": "ACTIVE", "summary": "Keep websites, skills, CLIs, and MCP servers as adapters over a portable content core.", "evidence": ["README.md"]},
+    {"id": "DEC-005", "status": "ACTIVE", "summary": "The public repository grants no reuse license unless a separate license is added.", "evidence": ["LICENSE", "package.json"]}
+  ],
+  "integrations": [
+    {"id": "INT-001", "name": "Git", "state": "IMPLEMENTED", "evidence": ["Repository metadata identifies main as the active branch"]},
+    {"id": "INT-002", "name": "GitHub remote", "state": "IMPLEMENTED", "evidence": ["origin URL is https://github.com/TOTALLYMAJOR/ai-leverage-library.git"]},
+    {"id": "INT-003", "name": "GitHub Actions", "state": "IMPLEMENTED", "evidence": [".github/workflows/validate.yml"], "operationalEvidence": "UNVERIFIED in this reconciliation"},
+    {"id": "INT-004", "name": "Node.js", "state": "IMPLEMENTED", "evidence": ["package.json requires Node >=20 and validation scripts use node:fs and node:path"]}
+  ],
+  "risks": [
+    {"id": "RISK-001", "severity": "HIGH", "summary": "Technique value may remain a documentation claim without retained trials and observed outcomes.", "evidence": ["No experiment or case-study entry exists at reconciliation"]},
+    {"id": "RISK-002", "severity": "MEDIUM", "summary": "The seed card's experimental status exceeds the documented promotion evidence currently present.", "evidence": ["content/techniques/discover/constraint-compilation.md says experimental and concept; CONTRIBUTING.md requires a bounded trial"]},
+    {"id": "RISK-003", "severity": "MEDIUM", "summary": "Public visibility may be mistaken for permission to reuse despite the all-rights-reserved license.", "evidence": ["LICENSE", "package.json"]}
+  ],
+  "blockers": [
+    {
+      "id": "BLK-001",
+      "priority": "P1",
+      "summary": "No retained bounded trial or independent user outcome proves the seed technique or primary journey.",
+      "evidence": ["content/experiments contains no experiment records; content/case-studies contains no case studies"],
+      "affectedGoals": ["GOAL-USER", "GOAL-ORGANIZATIONAL"],
+      "affectedJourneys": ["JOURNEY-PRIMARY"],
+      "dependencies": ["CAP-004", "CAP-011"],
+      "resolutionCondition": "Complete the next proof event with retained inputs, output, verification, and human review evidence.",
+      "status": "OPEN"
+    },
+    {
+      "id": "BLK-003",
+      "priority": "P2",
+      "summary": "No named reviewer, design partner, or adopting organization is recorded for outcome acceptance.",
+      "evidence": ["Repository documentation assigns human review but names no owner or adopter"],
+      "affectedGoals": ["GOAL-USER", "GOAL-ORGANIZATIONAL"],
+      "affectedJourneys": ["JOURNEY-PRIMARY"],
+      "dependencies": [],
+      "resolutionCondition": "Record an authorized reviewer and a bounded target workflow for the next proof event.",
+      "status": "OPEN"
+    }
+  ],
+  "proofEvents": [
+    {
+      "id": "PROOF-001",
+      "status": "NEXT",
+      "name": "Independent governed use of Constraint Compilation",
+      "whyItMatters": "It is the smallest event that can distinguish a well-structured technique card from a technique that creates reproducible user value.",
+      "prerequisites": ["Name an authorized reviewer and bounded real workflow", "Record the trial without secrets or proprietary material"],
+      "acceptanceCriteria": ["A practitioner who did not author the card follows the canonical workflow", "Every compiled constraint traces to supplied evidence", "The result preserves scope and authority boundaries", "A human reviewer accepts or rejects the output against the documented contract", "Failures and surprises are retained"],
+      "requiredEvidence": ["Experiment record", "Inputs or safe redactions", "Produced outcome contract", "Verification results", "Human review disposition"],
+      "currentBlockers": ["BLK-001", "BLK-003"]
+    }
+  ],
+  "commercialEvidence": [
+    {"id": "OUTCOME-001", "kind": "organizational", "claim": "The library improves the quality or speed of real AI-assisted work.", "state": "UNVERIFIED", "evidence": []},
+    {"id": "COMMERCIAL-001", "kind": "commercial", "targetBuyer": "UNKNOWN", "buyingTrigger": "UNKNOWN", "offer": "UNKNOWN", "priceHypothesis": "UNKNOWN", "prospects": "UNKNOWN", "designPartners": "UNKNOWN", "paidCustomers": "UNKNOWN", "activation": "UNVERIFIED", "usage": "UNVERIFIED", "retention": "UNVERIFIED", "measuredOutcome": "UNVERIFIED", "revenueEvidence": "UNVERIFIED"}
+  ],
+  "nextActions": [
+    {"order": 1, "action": "Select a bounded real workflow and independent practitioner for PROOF-001.", "addresses": ["BLK-001", "BLK-003"]},
+    {"order": 2, "action": "Run and retain the trial, including negative evidence and human disposition.", "addresses": ["BLK-001"]},
+    {"order": 3, "action": "Reconcile the seed technique status and adapter roadmap from the trial evidence without automatic promotion.", "addresses": ["RISK-002"]}
+  ]
+}
