@@ -92,6 +92,42 @@ Status: ACTIVE
 Revisit Trigger: Public distribution, external contribution, or downstream reuse is intentionally enabled.
 ```
 
+## DEC-006 - Capability horizons are not roadmap commitments
+
+```text
+Decision ID: DEC-006
+Date: 2026-09-15
+Context: The project needs to preserve ambitious future capability options without inflating current capability state, competing with the next proof event, or treating speculation as authorization.
+Decision: BACKLOG.md is a non-authoritative capability-horizon inventory. A horizon entry must be explicitly promoted through a bounded exploration and product decision before it becomes a roadmap commitment or canonical capability.
+Alternatives Considered: Add speculative items directly to the canonical capability ledger; mix them into the current exploration register; omit long-horizon options entirely.
+Why Chosen: Separating horizons from active state preserves strategic range while keeping evidence, priority, and authority claims accurate.
+Authority: Repository maintainers under the canonical project-state contract
+Affected Components: BACKLOG.md, PROJECT_STATE.md, .project/state.json, docs/project/EXPLORATIONS.md
+Evidence: BACKLOG.md; PROJECT_STATE.md
+Reversible? yes, through an explicit replacement of the planning contract and reconciliation of affected state artifacts
+Supersedes: None found
+Status: ACTIVE
+Revisit Trigger: A horizon entry is promoted, the project adopts a different portfolio-governance model, or backlog entries begin driving work without explicit decisions.
+```
+
+## DEC-007 - Experiment acquisition is preview-first and retention-gated
+
+```text
+Decision ID: DEC-007
+Date: 2026-09-15
+Context: Promising prompts and workflows need a reproducible intake path, but raw source capture can leak private data and a generated record can be mistaken for completed evidence.
+Decision: Experiment intake previews by default, rejects raw prompt and raw-source flags, records only a sanitized source reference, and requires explicit retention authorization before writing a proposed record.
+Alternatives Considered: Store raw prompts; write by default; rely on unvalidated manual template copies; automatically promote successful-looking records.
+Why Chosen: The boundary creates a useful acquisition path while preserving privacy, provenance, human authority, and the distinction between a proposal and an executed trial.
+Authority: Repository maintainers under AGENTS.md privacy and evidence boundaries
+Affected Components: scripts/create-experiment.mjs, scripts/lib/experiment-intake.mjs, schema/experiment.schema.json, templates/experiment-log.md, content/experiments, CONTRIBUTING.md
+Evidence: Passing local intake tests and experiment validation; proposed EXP-20260915-001 record
+Reversible? yes, but weakening retention or promotion gates requires explicit authority and updated safety evidence
+Supersedes: None found
+Status: ACTIVE
+Revisit Trigger: Authorized users cannot capture legitimate experiments without raw source retention, or evidence shows the current guard fails to prevent sensitive or misleading records.
+```
+
 ## Contradictions Requiring Authority
 
 The `experimental` label on the seed card conflicts with the promotion evidence described in `CONTRIBUTING.md`. This ledger does not silently convert either the card or the policy. A human reviewer must reconcile the status after evidence is produced or explicitly correct the historical label.

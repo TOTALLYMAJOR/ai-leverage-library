@@ -6,7 +6,7 @@ const TECHNIQUE_ROOT = path.join(ROOT, "content", "techniques");
 const CATALOG_PATH = path.join(ROOT, "catalog.yaml");
 const requiredFiles = [
   "README.md", "CATALOG.md", "catalog.yaml", "CONTRIBUTING.md", "CHANGELOG.md",
-  "schema/technique.schema.json", "templates/technique-card.md",
+  "schema/technique.schema.json", "schema/experiment.schema.json", "templates/technique-card.md",
   "templates/playbook.md", "templates/experiment-log.md"
 ];
 const requiredFields = [

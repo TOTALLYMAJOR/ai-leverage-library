@@ -10,7 +10,7 @@ A practitioner or AI agent should be able to find and apply an appropriate techn
 
 ## Current Reality
 
-The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, a Node validator, and GitHub Actions configuration. The canonical-state control plane and its targeted drift check are locally tested. There is no website/PWA, Codex skill, catalog CLI, MCP server, deployment configuration, retained user trial, case study, or commercial evidence.
+The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validators, automated intake tests, and GitHub Actions configuration. A preview-first, retention-gated experiment intake is locally tested, and one sanitized `PROOF-001` protocol is proposed but not run. The canonical-state control plane remains locally tested. A non-authoritative capability-horizon backlog preserves options beyond the current adapter and licensing explorations; those entries are not current capabilities or delivery commitments. There is no website/PWA, Codex skill adapter, general catalog CLI, MCP server, deployment configuration, executed user trial, case study, or commercial evidence.
 
 ## Capability State
 
@@ -19,13 +19,14 @@ The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, a Node 
 | `IDEA` | 1 | MCP adapter |
 | `SPECIFIED` | 4 | Constraint Compilation; website/PWA; Codex skill; CLI |
 | `IMPLEMENTED` | 4 | Canonical cards; catalogs; CI configuration; evidence-retention scaffolds |
-| `TESTED` | 2 | Technique validation; canonical state and drift detection |
+| `TESTED` | 3 | Technique validation; canonical state and drift detection; governed experiment intake and validation |
 | `BLOCKED` | 0 | None |
 | `VERIFIED` or higher | 0 | None |
 
 ## What Is Not Proven
 
 - Constraint Compilation repeatability or user value.
+- Execution or human acceptance of the proposed `EXP-20260915-001` protocol.
 - Compliance of the seed's `experimental` label with the documented trial requirement.
 - Current GitHub Actions execution for this revision.
 - Deployment, use, acceptance, adoption, retention, measured outcome, or revenue.
@@ -42,6 +43,8 @@ Finding and reading a technique is implemented through the catalogs and canonica
 - Evidence and human authority gates constrain promotion.
 - Delivery surfaces remain adapters over the portable content core.
 - Public visibility grants no reuse license.
+- Capability horizons remain options until explicitly promoted into exploration and canonical state.
+- Experiment acquisition previews by default and requires explicit retention authority before writing.
 
 ## Critical Blockers
 
@@ -54,8 +57,8 @@ Finding and reading a technique is implemented through the catalogs and canonica
 
 ## Next Actions
 
-1. Name the practitioner, workflow, and reviewer for `PROOF-001`.
-2. Run and retain the bounded trial, including negative evidence.
+1. Assign the practitioner, workflow, and reviewer to `EXP-20260915-001`.
+2. Execute and retain the bounded trial, including negative evidence.
 3. Reassess the technique status and adapter roadmap from that evidence.
 
 ## Commercial / Operational Evidence

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added a governed experiment-intake command with preview-first writes, retention authorization, catalog overlap reporting, and raw-source rejection.
+- Added an experiment schema, lifecycle validator, automated tests, and a proposed independent Constraint Compilation trial for `PROOF-001`.
 - Added the canonical project-state ledger, evidence registers, executive state, and a deterministic drift validator.
 - Added agent completion semantics that keep implementation, verification, deployment, use, and proven outcomes distinct.
 

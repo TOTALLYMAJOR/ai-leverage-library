@@ -6,10 +6,10 @@ Only conditions that prevent the next meaningful outcome belong here. Broader id
 
 ```text
 Priority: P1
-Evidence: No experiment record or case study exists; the seed card records evidence_level: concept.
+Evidence: `EXP-20260915-001` is a proposed protocol only; it records no execution, result, or human disposition, and the seed card remains at evidence_level: concept.
 Affected Goal: GOAL-USER; GOAL-ORGANIZATIONAL
 Affected Journey: JOURNEY-PRIMARY
-Dependencies: CAP-004; CAP-011
+Dependencies: CAP-004; CAP-011; CAP-012
 Resolution Condition: Complete PROOF-001 with retained inputs, output, verification, failures, and human disposition.
 Status: OPEN
 ```

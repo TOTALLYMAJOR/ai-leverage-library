@@ -5,7 +5,10 @@
   "description": "A Git-native field manual of reproducible AI techniques.",
   "type": "module",
   "scripts": {
-    "validate": "npm run validate:project-state && npm run validate:techniques",
+    "experiment:new": "node scripts/create-experiment.mjs",
+    "test:intake": "node --test tests/experiment-intake.test.mjs tests/validate-experiments.test.mjs",
+    "validate": "npm run validate:project-state && npm run test:intake && npm run validate:experiments && npm run validate:techniques",
+    "validate:experiments": "node scripts/validate-experiments.mjs",
     "validate:project-state": "node scripts/validate-project-state.mjs",
     "validate:techniques": "node scripts/validate.mjs",
     "test": "npm run validate",

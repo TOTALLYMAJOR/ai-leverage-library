@@ -2,6 +2,8 @@
 
 Explorations are unresolved questions, not requirements or authority to execute.
 
+[`BACKLOG.md`](../../BACKLOG.md) records capabilities beyond this current exploration set. Its horizon entries are not open explorations and do not enter this register until a recurring problem, falsifiable hypothesis, owner, authority boundary, and explicit promotion decision exist.
+
 ## EXP-001 - Searchable documentation site or PWA
 
 ```text

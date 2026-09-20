@@ -11,9 +11,9 @@ Primary Purpose: A Git-native, evidence-aware library of reproducible AI techniq
 Primary User / Actor: Practitioners and AI agents seeking reproducible, authority-bounded AI workflows.
 Economic Buyer: UNKNOWN
 Problem Solved: Useful AI workflows are scattered across prompts, demonstrations, and tribal knowledge without reproducible verification or explicit human authority boundaries.
-Current Product Stage: 0.1.0 repository scaffold with one seed technique; product use and organizational value are UNVERIFIED.
+Current Product Stage: 0.1.0 repository scaffold with one seed technique, tested experiment intake, and one proposed trial; execution, product use, and organizational value are UNVERIFIED.
 Primary Deployment Target: UNVERIFIED - a static documentation site or PWA is specified, but no provider or deployment configuration exists.
-Last Evidence Reconciliation: 2026-08-25 against the committed repository snapshot.
+Last Evidence Reconciliation: 2026-09-20 with local validation.
 ```
 
 ## North-Star Goal
@@ -26,6 +26,7 @@ Technical success means the repository keeps portable technique definitions, evi
 - `.project/state.json` defines machine-readable project state and relationships.
 - This document summarizes that ledger for humans.
 - `docs/project/` provides detailed registers; it does not independently promote capability state.
+- [`BACKLOG.md`](BACKLOG.md) is a non-authoritative horizon inventory. Its entries are neither current capabilities nor active explorations, roadmap commitments, or execution authority.
 - Source proves implementation, local commands prove only the environment and revision they ran against, provider receipts prove provider acknowledgement, and human or user evidence proves acceptance or use. None substitutes for another.
 - Missing evidence is `UNVERIFIED`, not a pass or a failure.
 
@@ -47,15 +48,26 @@ The repository implements the card and catalog portion of this journey. Independ
 
 Supporting journey: a contributor searches for overlap, records an uncertain idea as an experiment, authors a card, updates the catalogs, runs validation, and obtains required review. This journey is documented and structurally implemented; a retained example completing the entire review workflow remains missing.
 
+Acquisition journey: a contributor or AI agent previews a sanitized experiment record, reviews catalog overlap, explicitly authorizes retention, and validates the proposed record. The command and validator are locally `TESTED`; independent contributor use and experiment execution remain `UNVERIFIED`.
+
 ## Current Evidence-Based Reality
 
 - The repository contains one canonical technique card, Constraint Compilation.
 - It contains authoring templates, a JSON schema for technique metadata, a machine catalog, a human catalog, a no-dependency validator, and GitHub Actions configuration.
-- The canonical-state ledger and both validation layers are locally `TESTED` against the exact committed snapshot by `npm run validate` for this reconciliation.
-- No searchable website/PWA, Codex skill, CLI, or MCP implementation exists. These remain specified or planned adapters.
-- No experiment record, case study, deployment receipt, user acceptance, usage, retention, measured outcome, paid customer, or revenue evidence exists in the repository.
+- The scoped backlog, intake, experiment, tests, and state changes passed `npm run validate` locally on 2026-09-20.
+- A preview-first experiment-intake command and lifecycle validator are implemented and locally `TESTED`. The command rejects raw prompt/source flags and requires explicit retention authorization before writing.
+- One sanitized proposed protocol operationalizes `PROOF-001`; it is explicitly not run and has no assigned practitioner or reviewer.
+- A capability-horizon backlog now records speculative options beyond the current adapter and licensing explorations; none of its entries is implemented, prioritized, or promoted into canonical capability state.
+- No searchable website/PWA, Codex skill, general catalog CLI, or MCP implementation exists. These remain specified or planned adapters; the experiment-intake command is a narrower tested workflow.
+- No executed experiment result, case study, deployment receipt, user acceptance, usage, retention, measured outcome, paid customer, or revenue evidence exists in the repository.
 - Before this control-plane commit, available history contained two commits and one material branch, `main`; no additional worktree was registered.
 - The public source remains `UNLICENSED`; public visibility is not reuse permission.
+
+## Capability Horizon
+
+[`BACKLOG.md`](BACKLOG.md) records future capabilities that extend beyond the five questions currently tracked in `docs/project/EXPLORATIONS.md`. Horizon entries require a recurring problem signal, a falsifiable experiment, explicit authority and privacy boundaries, an owner, and a displacement decision before they may become active explorations or canonical capabilities.
+
+Creating the horizon backlog changes planning visibility, not product capability. It does not change capability counts, blockers, the next proof event, or the evidence status of any technique.
 
 ## Reconciled Contradictions
 
@@ -87,8 +99,8 @@ Engineering work is derived backward from this event. Building an adapter does n
 
 ## Next Actions
 
-1. Select a bounded real workflow, independent practitioner, and authorized reviewer for `PROOF-001`.
-2. Run and retain the trial, including negative evidence and human disposition.
+1. Assign a bounded real workflow, independent practitioner, and authorized reviewer to `EXP-20260915-001`.
+2. Execute the proposed protocol and retain the result, including negative evidence and human disposition.
 3. Reconcile the seed technique status and adapter roadmap from the evidence without automatic promotion.
 
 ## Reconciliation Rule

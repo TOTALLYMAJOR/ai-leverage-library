@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/project-state.schema.json",
   "schemaVersion": 1,
-  "reconciledAt": "2026-08-25",
+  "reconciledAt": "2026-09-20",
   "validationPolicy": {
     "maxVerificationAgeDays": 90
   },
@@ -14,7 +14,7 @@
     "primaryUser": "Practitioners and AI agents seeking reproducible, authority-bounded AI workflows",
     "economicBuyer": "UNKNOWN",
     "problemSolved": "Useful AI workflows are commonly scattered across prompts, demonstrations, and tribal knowledge without reproducible verification or explicit human authority boundaries.",
-    "stage": "0.1.0 repository scaffold with one seed technique; product use and organizational value are UNVERIFIED",
+    "stage": "0.1.0 repository scaffold with one seed technique, tested experiment intake, and one proposed trial; execution, product use, and organizational value are UNVERIFIED",
     "deploymentTarget": "UNVERIFIED - a static documentation site or PWA is specified, but no provider or deployment configuration exists"
   },
   "goals": [
@@ -72,11 +72,11 @@
       "confidence": "HIGH",
       "evidence": [
         {"type": "source", "path": "scripts/validate.mjs", "detail": "No-dependency validator"},
-        {"type": "test-result", "path": "scripts/validate.mjs", "command": "npm run validate", "outcome": "PASS", "detail": "The exact committed snapshot passed technique and project-state validation on 2026-08-25", "observed_at": "2026-08-25"}
+        {"type": "test-result", "path": "scripts/validate.mjs", "command": "npm run validate", "outcome": "PASS", "detail": "Local technique, experiment, test, and project-state validation passed on 2026-09-20", "observed_at": "2026-09-20"}
       ],
       "dependencies": ["CAP-001"],
       "blockers": [],
-      "last_verified": "2026-08-25",
+      "last_verified": "2026-09-20",
       "owner_or_authority": "Repository maintainers",
       "is_current": true
     },
@@ -195,11 +195,11 @@
       "evidence": [
         {"type": "source", "path": ".project/state.json", "detail": "Machine-readable ledger"},
         {"type": "source", "path": "scripts/validate-project-state.mjs", "detail": "Drift validator"},
-        {"type": "test-result", "path": "scripts/validate-project-state.mjs", "command": "npm run validate:project-state", "outcome": "PASS", "observed_at": "2026-08-25", "detail": "Local structural and drift checks passed"}
+        {"type": "test-result", "path": "scripts/validate-project-state.mjs", "command": "npm run validate:project-state", "outcome": "PASS", "observed_at": "2026-09-20", "detail": "Local structural and drift checks passed"}
       ],
       "dependencies": [],
       "blockers": [],
-      "last_verified": "2026-08-25",
+      "last_verified": "2026-09-20",
       "owner_or_authority": "Repository maintainers; semantic state changes require evidence and any designated human gate",
       "is_current": true
     },
@@ -218,6 +218,25 @@
       "blockers": ["BLK-001"],
       "last_verified": "2026-08-25",
       "owner_or_authority": "Repository contributors and human reviewers",
+      "is_current": true
+    },
+    {
+      "id": "CAP-012",
+      "name": "Governed experiment intake and validation",
+      "description": "Turn a sanitized prompt or workflow signal into a collision-safe proposed experiment record through preview-first intake, explicit retention authorization, catalog overlap reporting, and lifecycle-aware validation.",
+      "lifecycle_state": "TESTED",
+      "confidence": "HIGH",
+      "evidence": [
+        {"type": "source", "path": "scripts/create-experiment.mjs", "detail": "Preview-first experiment intake command"},
+        {"type": "source", "path": "scripts/validate-experiments.mjs", "detail": "Experiment lifecycle and structure validator"},
+        {"type": "source", "path": "schema/experiment.schema.json", "detail": "Machine-readable experiment metadata contract"},
+        {"type": "test-result", "path": "tests/experiment-intake.test.mjs", "command": "npm run test:intake", "outcome": "PASS", "observed_at": "2026-09-20", "detail": "Eleven local tests covered preview, retention authorization, collision-safe writes, unsafe input and candidate-ID rejection, lifecycle directories and metadata, placeholders, required sections, and duplicate IDs"},
+        {"type": "test-result", "path": "scripts/validate-experiments.mjs", "command": "npm run validate:experiments", "outcome": "PASS", "observed_at": "2026-09-20", "detail": "The proposed PROOF-001 experiment record passed structural validation"}
+      ],
+      "dependencies": ["CAP-003", "CAP-011"],
+      "blockers": [],
+      "last_verified": "2026-09-20",
+      "owner_or_authority": "Repository maintainers control the intake contract; source owners authorize retention; human reviewers control acceptance and lifecycle promotion",
       "is_current": true
     }
   ],
@@ -246,6 +265,22 @@
       "evidence": ["CONTRIBUTING.md", "templates/technique-card.md", "scripts/validate.mjs"],
       "missingProof": ["A retained example of a newly published technique completing the entire review workflow"],
       "blockers": []
+    },
+    {
+      "id": "JOURNEY-INTAKE",
+      "name": "Capture a candidate as a governed experiment",
+      "kind": "supporting",
+      "status": "TESTED",
+      "trigger": "A promising prompt, correction, workflow, failure, reference, or research finding may contain a reusable technique",
+      "actor": "Repository contributor or AI agent operating under retention authority",
+      "action": "Preview a sanitized proposed experiment, review catalog overlap, explicitly authorize retention, and validate the resulting record",
+      "stateChange": "An unstructured candidate becomes a traceable proposed experiment without claiming execution or outcome evidence",
+      "authorityOrEvidence": "Sanitized source reference, retention authorization, validated experiment record, and human lifecycle gates",
+      "nextState": "Assign a bounded trial, practitioner, and reviewer or reject the candidate",
+      "outcome": "A structurally valid proposed experiment with explicit uncertainty and authority",
+      "evidence": ["scripts/create-experiment.mjs", "scripts/validate-experiments.mjs", "content/experiments/inbox/EXP-20260915-001-constraint-compilation-independent-trial.md"],
+      "missingProof": ["No independent contributor use, executed experiment, or accepted outcome has been retained"],
+      "blockers": []
     }
   ],
   "decisions": [
@@ -253,7 +288,9 @@
     {"id": "DEC-002", "status": "ACTIVE", "summary": "Organize techniques by outcomes rather than vendors or models.", "evidence": ["README.md"]},
     {"id": "DEC-003", "status": "ACTIVE", "summary": "Evidence levels and human authority gates constrain lifecycle promotion.", "evidence": ["AGENTS.md", "CONTRIBUTING.md"]},
     {"id": "DEC-004", "status": "ACTIVE", "summary": "Keep websites, skills, CLIs, and MCP servers as adapters over a portable content core.", "evidence": ["README.md"]},
-    {"id": "DEC-005", "status": "ACTIVE", "summary": "The public repository grants no reuse license unless a separate license is added.", "evidence": ["LICENSE", "package.json"]}
+    {"id": "DEC-005", "status": "ACTIVE", "summary": "The public repository grants no reuse license unless a separate license is added.", "evidence": ["LICENSE", "package.json"]},
+    {"id": "DEC-006", "status": "ACTIVE", "summary": "The capability horizon backlog is a non-authoritative option inventory; entries require explicit promotion before they become explorations, roadmap commitments, or canonical capabilities.", "evidence": ["BACKLOG.md", "PROJECT_STATE.md"]},
+    {"id": "DEC-007", "status": "ACTIVE", "summary": "Experiment acquisition is preview-first, rejects raw prompt or source flags, and requires explicit retention authorization before writing a proposed record.", "evidence": ["scripts/create-experiment.mjs", "scripts/lib/experiment-intake.mjs", "CONTRIBUTING.md"]}
   ],
   "integrations": [
     {"id": "INT-001", "name": "Git", "state": "IMPLEMENTED", "evidence": ["Repository metadata identifies main as the active branch"]},
@@ -262,19 +299,20 @@
     {"id": "INT-004", "name": "Node.js", "state": "IMPLEMENTED", "evidence": ["package.json requires Node >=20 and validation scripts use node:fs and node:path"]}
   ],
   "risks": [
-    {"id": "RISK-001", "severity": "HIGH", "summary": "Technique value may remain a documentation claim without retained trials and observed outcomes.", "evidence": ["No experiment or case-study entry exists at reconciliation"]},
+    {"id": "RISK-001", "severity": "HIGH", "summary": "Technique value may remain a documentation claim without retained trials and observed outcomes.", "evidence": ["One experiment protocol is proposed, but no executed trial, case study, human disposition, or observed outcome exists at reconciliation"]},
     {"id": "RISK-002", "severity": "MEDIUM", "summary": "The seed card's experimental status exceeds the documented promotion evidence currently present.", "evidence": ["content/techniques/discover/constraint-compilation.md says experimental and concept; CONTRIBUTING.md requires a bounded trial"]},
-    {"id": "RISK-003", "severity": "MEDIUM", "summary": "Public visibility may be mistaken for permission to reuse despite the all-rights-reserved license.", "evidence": ["LICENSE", "package.json"]}
+    {"id": "RISK-003", "severity": "MEDIUM", "summary": "Public visibility may be mistaken for permission to reuse despite the all-rights-reserved license.", "evidence": ["LICENSE", "package.json"]},
+    {"id": "RISK-004", "severity": "MEDIUM", "summary": "A structurally valid proposed experiment may be mistaken for an executed trial or outcome evidence.", "evidence": ["content/experiments/inbox/EXP-20260915-001-constraint-compilation-independent-trial.md explicitly says Not run"]}
   ],
   "blockers": [
     {
       "id": "BLK-001",
       "priority": "P1",
       "summary": "No retained bounded trial or independent user outcome proves the seed technique or primary journey.",
-      "evidence": ["content/experiments contains no experiment records; content/case-studies contains no case studies"],
+      "evidence": ["content/experiments contains one proposed protocol but no executed results or human disposition; content/case-studies contains no case studies"],
       "affectedGoals": ["GOAL-USER", "GOAL-ORGANIZATIONAL"],
       "affectedJourneys": ["JOURNEY-PRIMARY"],
-      "dependencies": ["CAP-004", "CAP-011"],
+      "dependencies": ["CAP-004", "CAP-011", "CAP-012"],
       "resolutionCondition": "Complete the next proof event with retained inputs, output, verification, and human review evidence.",
       "status": "OPEN"
     },
@@ -307,8 +345,8 @@
     {"id": "COMMERCIAL-001", "kind": "commercial", "targetBuyer": "UNKNOWN", "buyingTrigger": "UNKNOWN", "offer": "UNKNOWN", "priceHypothesis": "UNKNOWN", "prospects": "UNKNOWN", "designPartners": "UNKNOWN", "paidCustomers": "UNKNOWN", "activation": "UNVERIFIED", "usage": "UNVERIFIED", "retention": "UNVERIFIED", "measuredOutcome": "UNVERIFIED", "revenueEvidence": "UNVERIFIED"}
   ],
   "nextActions": [
-    {"order": 1, "action": "Select a bounded real workflow and independent practitioner for PROOF-001.", "addresses": ["BLK-001", "BLK-003"]},
-    {"order": 2, "action": "Run and retain the trial, including negative evidence and human disposition.", "addresses": ["BLK-001"]},
+    {"order": 1, "action": "Assign a bounded real workflow, independent practitioner, and authorized reviewer to EXP-20260915-001.", "addresses": ["BLK-001", "BLK-003"]},
+    {"order": 2, "action": "Execute the proposed protocol and retain the result, negative evidence, and human disposition.", "addresses": ["BLK-001"]},
     {"order": 3, "action": "Reconcile the seed technique status and adapter roadmap from the trial evidence without automatic promotion.", "addresses": ["RISK-002"]}
   ]
 }
