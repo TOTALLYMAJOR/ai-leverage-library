@@ -10,7 +10,7 @@ A practitioner or AI agent should be able to find and apply an appropriate techn
 
 ## Current Reality
 
-The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validators, automated intake tests, and GitHub Actions configuration. A preview-first, retention-gated experiment intake is locally tested, and one sanitized `PROOF-001` protocol is proposed but not run. The canonical-state control plane remains locally tested. A non-authoritative capability-horizon backlog preserves options beyond the current adapter and licensing explorations; those entries are not current capabilities or delivery commitments. There is no website/PWA, Codex skill adapter, general catalog CLI, MCP server, deployment configuration, executed user trial, case study, or commercial evidence.
+The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validators, automated intake tests, and GitHub Actions configuration. A preview-first, retention-gated experiment intake is locally tested. One sanitized `PROOF-001` experiment is active with a fresh practitioner's retained contract, failure-scenario check, procedural deviations, and repository-owner acceptance with limitations. The canonical-state control plane remains locally tested. A non-authoritative capability-horizon backlog preserves options beyond the current adapter and licensing explorations; those entries are not current capabilities or delivery commitments. There is no website/PWA, Codex skill adapter, general catalog CLI, MCP server, deployment configuration, independent repetition, observed user use, case study, or commercial evidence.
 
 ## Capability State
 
@@ -26,15 +26,15 @@ The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validat
 ## What Is Not Proven
 
 - Constraint Compilation repeatability or user value.
-- Execution or human acceptance of the proposed `EXP-20260915-001` protocol.
-- Compliance of the seed's `experimental` label with the documented trial requirement.
+- Protocol-compliant independent repetition of `EXP-20260915-001`.
+- Any evidence-level or capability promotion beyond the accepted bounded-trial minimum.
 - Current GitHub Actions execution for this revision.
 - Deployment, use, acceptance, adoption, retention, measured outcome, or revenue.
 - A buyer, offer, price, design partner, paid customer, or commercial model.
 
 ## Primary Journey
 
-Finding and reading a technique is implemented through the catalogs and canonical card. Applying it, retaining verification, obtaining human acceptance, and observing an outcome are `UNVERIFIED`. The supporting authoring journey is structurally implemented, but no retained example proves the full review workflow.
+Finding and reading a technique is implemented through the catalogs and canonical card. One application and human disposition are retained with limitations; repeatability, observed use, and outcome remain `UNVERIFIED`. The supporting authoring journey is structurally implemented, but no retained example proves the full review workflow.
 
 ## Critical Decisions
 
@@ -48,18 +48,17 @@ Finding and reading a technique is implemented through the catalogs and canonica
 
 ## Critical Blockers
 
-- `BLK-001` (P1): no retained bounded trial or independent user outcome.
-- `BLK-003` (P2): no reviewer, design partner, or adopting organization is recorded.
+- `BLK-001` (P1): no independent repetition proves reproducibility under documented conditions.
 
 ## Next Proof Event
 
-`PROOF-001`: an independent practitioner applies the canonical Constraint Compilation card to a bounded real workflow, retains the result and verification, and receives an authorized human disposition.
+`PROOF-002`: a second independent practitioner repeats Constraint Compilation under documented conditions, compares the result with `PROOF-001`, and receives an authorized human disposition.
 
 ## Next Actions
 
-1. Assign the practitioner, workflow, and reviewer to `EXP-20260915-001`.
-2. Execute and retain the bounded trial, including negative evidence.
-3. Reassess the technique status and adapter roadmap from that evidence.
+1. Design a bounded repetition with verified practitioner non-authorship and an explicit inspection boundary.
+2. Run it and retain the result, failures, comparison, and human disposition.
+3. Reassess reproducibility and technique status without automatic promotion.
 
 ## Commercial / Operational Evidence
 

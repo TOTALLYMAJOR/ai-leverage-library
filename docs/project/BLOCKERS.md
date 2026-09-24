@@ -2,27 +2,15 @@
 
 Only conditions that prevent the next meaningful outcome belong here. Broader ideas remain in `EXPLORATIONS.md`.
 
-## BLK-001 - No retained proof of the primary outcome
+## BLK-001 - No independent repetition of the primary outcome
 
 ```text
 Priority: P1
-Evidence: `EXP-20260915-001` is a proposed protocol only; it records no execution, result, or human disposition, and the seed card remains at evidence_level: concept.
+Evidence: `EXP-20260915-001` retains one owner-accepted-with-limitations practitioner result, but no second independent run tests repeatability under documented conditions; the seed card remains at evidence_level: concept.
 Affected Goal: GOAL-USER; GOAL-ORGANIZATIONAL
 Affected Journey: JOURNEY-PRIMARY
 Dependencies: CAP-004; CAP-011; CAP-012
-Resolution Condition: Complete PROOF-001 with retained inputs, output, verification, failures, and human disposition.
-Status: OPEN
-```
-
-## BLK-003 - No outcome reviewer or adopter is recorded
-
-```text
-Priority: P2
-Evidence: Governance requires human review, but no reviewer, design partner, or adopting organization is named in repository evidence.
-Affected Goal: GOAL-USER; GOAL-ORGANIZATIONAL
-Affected Journey: JOURNEY-PRIMARY
-Dependencies: None
-Resolution Condition: Record an authorized reviewer and a bounded target workflow for PROOF-001.
+Resolution Condition: Complete PROOF-002 with a second independent result, comparison, verification, and authorized human disposition.
 Status: OPEN
 ```
 

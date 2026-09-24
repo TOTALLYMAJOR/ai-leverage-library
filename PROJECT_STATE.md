@@ -11,9 +11,9 @@ Primary Purpose: A Git-native, evidence-aware library of reproducible AI techniq
 Primary User / Actor: Practitioners and AI agents seeking reproducible, authority-bounded AI workflows.
 Economic Buyer: UNKNOWN
 Problem Solved: Useful AI workflows are scattered across prompts, demonstrations, and tribal knowledge without reproducible verification or explicit human authority boundaries.
-Current Product Stage: 0.1.0 repository scaffold with one seed technique, tested experiment intake, and one proposed trial; execution, product use, and organizational value are UNVERIFIED.
+Current Product Stage: 0.1.0 repository scaffold with one seed technique, tested experiment intake, and one accepted-with-limitations practitioner trial awaiting independent repetition; product use and organizational value are UNVERIFIED.
 Primary Deployment Target: UNVERIFIED - a static documentation site or PWA is specified, but no provider or deployment configuration exists.
-Last Evidence Reconciliation: 2026-09-20 with local validation.
+Last Evidence Reconciliation: 2026-09-24 with authorized human disposition and local validation.
 ```
 
 ## North-Star Goal
@@ -44,22 +44,22 @@ A practitioner has an outcome or problem
 -> Useful outcome with explicit limits and authority
 ```
 
-The repository implements the card and catalog portion of this journey. Independent use, human acceptance, measured outcome, and repeatability are `UNVERIFIED`.
+The repository implements the card and catalog portion of this journey. A fresh practitioner produced one retained, source-traced contract that the repository owner accepted with documented limitations; repeatability, real use, and measured outcome remain `UNVERIFIED`.
 
 Supporting journey: a contributor searches for overlap, records an uncertain idea as an experiment, authors a card, updates the catalogs, runs validation, and obtains required review. This journey is documented and structurally implemented; a retained example completing the entire review workflow remains missing.
 
-Acquisition journey: a contributor or AI agent previews a sanitized experiment record, reviews catalog overlap, explicitly authorizes retention, and validates the proposed record. The command and validator are locally `TESTED`; independent contributor use and experiment execution remain `UNVERIFIED`.
+Acquisition journey: a contributor or AI agent previews a sanitized experiment record, reviews catalog overlap, explicitly authorizes retention, and validates the proposed record. The command and validator are locally `TESTED`; independent contributor use of the intake command remains `UNVERIFIED`.
 
 ## Current Evidence-Based Reality
 
 - The repository contains one canonical technique card, Constraint Compilation.
 - It contains authoring templates, a JSON schema for technique metadata, a machine catalog, a human catalog, a no-dependency validator, and GitHub Actions configuration.
-- The scoped backlog, intake, experiment, tests, and state changes passed `npm run validate` locally on 2026-09-20.
+- The scoped backlog, intake, experiment, tests, and state changes passed `npm run validate` locally on 2026-09-24.
 - A preview-first experiment-intake command and lifecycle validator are implemented and locally `TESTED`. The command rejects raw prompt/source flags and requires explicit retention authorization before writing.
-- One sanitized proposed protocol operationalizes `PROOF-001`; it is explicitly not run and has no assigned practitioner or reviewer.
+- One sanitized active experiment operationalized `PROOF-001`. A fresh practitioner produced a retained contract and failure-scenario check; the repository owner accepted the artifact with its documented deviations on 2026-09-24.
 - A capability-horizon backlog now records speculative options beyond the current adapter and licensing explorations; none of its entries is implemented, prioritized, or promoted into canonical capability state.
 - No searchable website/PWA, Codex skill, general catalog CLI, or MCP implementation exists. These remain specified or planned adapters; the experiment-intake command is a narrower tested workflow.
-- No executed experiment result, case study, deployment receipt, user acceptance, usage, retention, measured outcome, paid customer, or revenue evidence exists in the repository.
+- One accepted-with-limitations practitioner result is retained. No independent repetition, case study, deployment receipt, observed user use, retention, measured outcome, paid customer, or revenue evidence exists in the repository.
 - Before this control-plane commit, available history contained two commits and one material branch, `main`; no additional worktree was registered.
 - The public source remains `UNLICENSED`; public visibility is not reuse permission.
 
@@ -71,37 +71,36 @@ Creating the horizon backlog changes planning visibility, not product capability
 
 ## Reconciled Contradictions
 
-- `content/techniques/discover/constraint-compilation.md` labels the technique `experimental` while its `evidence_level` is `concept`; `CONTRIBUTING.md` requires at least one bounded trial for experimental status. No retained trial exists. The capability is therefore recorded as `SPECIFIED`, and the card was not silently relabeled.
+- `content/techniques/discover/constraint-compilation.md` labels the technique `experimental` while its `evidence_level` is `concept`. The accepted-with-limitations bounded trial now satisfies the minimum experimental trial requirement, but repeatability and observed outcomes remain unverified. The capability remains `SPECIFIED`, and the card was not silently relabeled or promoted.
 - GitHub Actions configuration proves intended CI behavior, not a current provider run. Current CI execution is `UNVERIFIED` in this reconciliation.
 
 ## Critical Blockers
 
-- `BLK-001` (P1): no retained bounded trial or independent outcome proves the seed technique or primary journey.
-- `BLK-003` (P2): no reviewer, design partner, or adopting organization is recorded for outcome acceptance.
+- `BLK-001` (P1): no independent repetition proves the seed technique is reproducible under documented conditions.
 
 ## NEXT PROOF EVENT
 
-**ID:** `PROOF-001`
+**ID:** `PROOF-002`
 
-**Proof Event:** An independent practitioner uses the canonical Constraint Compilation card on a bounded real workflow, and an authorized human reviews the result.
+**Proof Event:** A second independent practitioner repeats Constraint Compilation on a bounded workflow under the documented conditions, with an authorized human reviewing the result.
 
-**Why It Matters:** This is the smallest observable event that distinguishes a well-structured technique card from a technique that creates reproducible user value.
+**Why It Matters:** `PROOF-001` established one accepted-with-limitations bounded trial. Repetition is the smallest next event that can test reproducibility rather than one-run plausibility.
 
-**Prerequisites:** Name a reviewer and bounded workflow; retain the trial without secrets or proprietary material.
+**Prerequisites:** Retain the `PROOF-001` artifact and disposition; name a second practitioner whose non-authorship is verified; preserve the stricter source-inspection boundary or explicitly approve deviations before execution.
 
-**Acceptance Criteria:** The practitioner did not author the card; every compiled constraint traces to supplied evidence; authority and scope boundaries are preserved; a human accepts or rejects the result against the documented contract; failures and surprises are retained.
+**Acceptance Criteria:** The second practitioner did not author the card; every compiled constraint traces to supplied evidence; authority and scope boundaries are preserved; results and failures are compared with `PROOF-001`; an authorized human accepts or rejects the repetition.
 
-**Required Evidence:** Experiment record, safe inputs or redactions, produced outcome contract, verification results, and human disposition.
+**Required Evidence:** Repetition record, safe inputs or redactions, produced outcome contract, comparison with `PROOF-001`, verification results, and human disposition.
 
-**Current Blockers:** `BLK-001`, `BLK-003`.
+**Current Blockers:** `BLK-001`.
 
 Engineering work is derived backward from this event. Building an adapter does not replace the proof event.
 
 ## Next Actions
 
-1. Assign a bounded real workflow, independent practitioner, and authorized reviewer to `EXP-20260915-001`.
-2. Execute the proposed protocol and retain the result, including negative evidence and human disposition.
-3. Reconcile the seed technique status and adapter roadmap from the evidence without automatic promotion.
+1. Design a bounded independent repetition that verifies practitioner non-authorship and fixes or pre-authorizes the inspection boundary.
+2. Run the repetition and retain its result, failures, comparison, and human disposition.
+3. Reassess reproducibility and the seed technique status without automatic promotion.
 
 ## Reconciliation Rule
 

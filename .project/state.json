@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/project-state.schema.json",
   "schemaVersion": 1,
-  "reconciledAt": "2026-09-20",
+  "reconciledAt": "2026-09-24",
   "validationPolicy": {
     "maxVerificationAgeDays": 90
   },
@@ -14,7 +14,7 @@
     "primaryUser": "Practitioners and AI agents seeking reproducible, authority-bounded AI workflows",
     "economicBuyer": "UNKNOWN",
     "problemSolved": "Useful AI workflows are commonly scattered across prompts, demonstrations, and tribal knowledge without reproducible verification or explicit human authority boundaries.",
-    "stage": "0.1.0 repository scaffold with one seed technique, tested experiment intake, and one proposed trial; execution, product use, and organizational value are UNVERIFIED",
+    "stage": "0.1.0 repository scaffold with one seed technique, tested experiment intake, and one accepted-with-limitations practitioner trial awaiting independent repetition; product use and organizational value are UNVERIFIED",
     "deploymentTarget": "UNVERIFIED - a static documentation site or PWA is specified, but no provider or deployment configuration exists"
   },
   "goals": [
@@ -72,11 +72,11 @@
       "confidence": "HIGH",
       "evidence": [
         {"type": "source", "path": "scripts/validate.mjs", "detail": "No-dependency validator"},
-        {"type": "test-result", "path": "scripts/validate.mjs", "command": "npm run validate", "outcome": "PASS", "detail": "Local technique, experiment, test, and project-state validation passed on 2026-09-20", "observed_at": "2026-09-20"}
+        {"type": "test-result", "path": "scripts/validate.mjs", "command": "npm run validate", "outcome": "PASS", "detail": "Local technique, experiment, test, and project-state validation passed on 2026-09-24", "observed_at": "2026-09-24"}
       ],
       "dependencies": ["CAP-001"],
       "blockers": [],
-      "last_verified": "2026-09-20",
+      "last_verified": "2026-09-24",
       "owner_or_authority": "Repository maintainers",
       "is_current": true
     },
@@ -103,11 +103,12 @@
       "lifecycle_state": "SPECIFIED",
       "confidence": "MEDIUM",
       "evidence": [
-        {"type": "source", "path": "content/techniques/discover/constraint-compilation.md", "detail": "Workflow and verification are documented; no retained trial is present"}
+        {"type": "source", "path": "content/techniques/discover/constraint-compilation.md", "detail": "Workflow and verification contract"},
+        {"type": "experiment-result", "path": "docs/project/evidence/EXP-20260915-001-outcome-contract.md", "detail": "Repository owner accepted the fresh practitioner's traced contract and failure-scenario check with documented limitations on 2026-09-24"}
       ],
       "dependencies": ["CAP-001"],
       "blockers": ["BLK-001"],
-      "last_verified": "2026-08-25",
+      "last_verified": "2026-09-24",
       "owner_or_authority": "Human reviewer for any promotion beyond specified",
       "is_current": true
     },
@@ -195,11 +196,11 @@
       "evidence": [
         {"type": "source", "path": ".project/state.json", "detail": "Machine-readable ledger"},
         {"type": "source", "path": "scripts/validate-project-state.mjs", "detail": "Drift validator"},
-        {"type": "test-result", "path": "scripts/validate-project-state.mjs", "command": "npm run validate:project-state", "outcome": "PASS", "observed_at": "2026-09-20", "detail": "Local structural and drift checks passed"}
+        {"type": "test-result", "path": "scripts/validate-project-state.mjs", "command": "npm run validate:project-state", "outcome": "PASS", "observed_at": "2026-09-24", "detail": "Local structural and drift checks passed"}
       ],
       "dependencies": [],
       "blockers": [],
-      "last_verified": "2026-09-20",
+      "last_verified": "2026-09-24",
       "owner_or_authority": "Repository maintainers; semantic state changes require evidence and any designated human gate",
       "is_current": true
     },
@@ -230,12 +231,12 @@
         {"type": "source", "path": "scripts/create-experiment.mjs", "detail": "Preview-first experiment intake command"},
         {"type": "source", "path": "scripts/validate-experiments.mjs", "detail": "Experiment lifecycle and structure validator"},
         {"type": "source", "path": "schema/experiment.schema.json", "detail": "Machine-readable experiment metadata contract"},
-        {"type": "test-result", "path": "tests/experiment-intake.test.mjs", "command": "npm run test:intake", "outcome": "PASS", "observed_at": "2026-09-20", "detail": "Eleven local tests covered preview, retention authorization, collision-safe writes, unsafe input and candidate-ID rejection, lifecycle directories and metadata, placeholders, required sections, and duplicate IDs"},
-        {"type": "test-result", "path": "scripts/validate-experiments.mjs", "command": "npm run validate:experiments", "outcome": "PASS", "observed_at": "2026-09-20", "detail": "The proposed PROOF-001 experiment record passed structural validation"}
+        {"type": "test-result", "path": "tests/experiment-intake.test.mjs", "command": "npm run test:intake", "outcome": "PASS", "observed_at": "2026-09-24", "detail": "Eleven local tests covered preview, retention authorization, collision-safe writes, unsafe input and candidate-ID rejection, lifecycle directories and metadata, placeholders, required sections, and duplicate IDs"},
+        {"type": "test-result", "path": "scripts/validate-experiments.mjs", "command": "npm run validate:experiments", "outcome": "PASS", "observed_at": "2026-09-24", "detail": "The active PROOF-001 experiment record passed structural validation"}
       ],
       "dependencies": ["CAP-003", "CAP-011"],
       "blockers": [],
-      "last_verified": "2026-09-20",
+      "last_verified": "2026-09-24",
       "owner_or_authority": "Repository maintainers control the intake contract; source owners authorize retention; human reviewers control acceptance and lifecycle promotion",
       "is_current": true
     }
@@ -253,9 +254,9 @@
       "authorityOrEvidence": "Technique card, retained verification evidence, and required human review",
       "nextState": "Retain a result or experiment and reassess the technique's evidence status",
       "outcome": "A useful result whose limits and authority are explicit",
-      "evidence": ["CATALOG.md", "content/techniques/discover/constraint-compilation.md"],
-      "missingProof": ["No retained independent user application or measured outcome exists in the repository"],
-      "blockers": ["BLK-001", "BLK-003"]
+      "evidence": ["CATALOG.md", "content/techniques/discover/constraint-compilation.md", "docs/project/evidence/EXP-20260915-001-outcome-contract.md"],
+      "missingProof": ["Independent repetition, real use, and measured outcome remain unverified"],
+      "blockers": ["BLK-001"]
     },
     {
       "id": "JOURNEY-AUTHOR",
@@ -276,10 +277,10 @@
       "action": "Preview a sanitized proposed experiment, review catalog overlap, explicitly authorize retention, and validate the resulting record",
       "stateChange": "An unstructured candidate becomes a traceable proposed experiment without claiming execution or outcome evidence",
       "authorityOrEvidence": "Sanitized source reference, retention authorization, validated experiment record, and human lifecycle gates",
-      "nextState": "Assign a bounded trial, practitioner, and reviewer or reject the candidate",
-      "outcome": "A structurally valid proposed experiment with explicit uncertainty and authority",
-      "evidence": ["scripts/create-experiment.mjs", "scripts/validate-experiments.mjs", "content/experiments/inbox/EXP-20260915-001-constraint-compilation-independent-trial.md"],
-      "missingProof": ["No independent contributor use, executed experiment, or accepted outcome has been retained"],
+      "nextState": "Retain an independent repetition or reject further validation with retained reasons",
+      "outcome": "A structurally valid active experiment with an accepted-with-limitations practitioner result and explicit uncertainty and authority",
+      "evidence": ["scripts/create-experiment.mjs", "scripts/validate-experiments.mjs", "content/experiments/active/EXP-20260915-001-constraint-compilation-independent-trial.md", "docs/project/evidence/EXP-20260915-001-outcome-contract.md"],
+      "missingProof": ["No independent repetition or observed user outcome has been retained"],
       "blockers": []
     }
   ],
@@ -299,45 +300,44 @@
     {"id": "INT-004", "name": "Node.js", "state": "IMPLEMENTED", "evidence": ["package.json requires Node >=20 and validation scripts use node:fs and node:path"]}
   ],
   "risks": [
-    {"id": "RISK-001", "severity": "HIGH", "summary": "Technique value may remain a documentation claim without retained trials and observed outcomes.", "evidence": ["One experiment protocol is proposed, but no executed trial, case study, human disposition, or observed outcome exists at reconciliation"]},
-    {"id": "RISK-002", "severity": "MEDIUM", "summary": "The seed card's experimental status exceeds the documented promotion evidence currently present.", "evidence": ["content/techniques/discover/constraint-compilation.md says experimental and concept; CONTRIBUTING.md requires a bounded trial"]},
+    {"id": "RISK-001", "severity": "HIGH", "summary": "Technique value may remain a one-run documentation claim without independent repetition and observed outcomes.", "evidence": ["One accepted-with-limitations practitioner result is retained, but it has no repetition, case study, or observed outcome"]},
+    {"id": "RISK-002", "severity": "MEDIUM", "summary": "The seed card's evidence level may be mistaken for reproducibility after one accepted bounded trial.", "evidence": ["content/techniques/discover/constraint-compilation.md remains experimental and concept; independent repetition is absent"]},
     {"id": "RISK-003", "severity": "MEDIUM", "summary": "Public visibility may be mistaken for permission to reuse despite the all-rights-reserved license.", "evidence": ["LICENSE", "package.json"]},
-    {"id": "RISK-004", "severity": "MEDIUM", "summary": "A structurally valid proposed experiment may be mistaken for an executed trial or outcome evidence.", "evidence": ["content/experiments/inbox/EXP-20260915-001-constraint-compilation-independent-trial.md explicitly says Not run"]}
+    {"id": "RISK-004", "severity": "MEDIUM", "summary": "An accepted practitioner artifact may be mistaken for a reproducible or observed user outcome.", "evidence": ["The active experiment is accepted with retained protocol limitations and has not been repeated or observed in use"]}
   ],
   "blockers": [
     {
       "id": "BLK-001",
       "priority": "P1",
-      "summary": "No retained bounded trial or independent user outcome proves the seed technique or primary journey.",
-      "evidence": ["content/experiments contains one proposed protocol but no executed results or human disposition; content/case-studies contains no case studies"],
+      "summary": "No independent repetition proves the seed technique is reproducible under documented conditions.",
+      "evidence": ["EXP-20260915-001 retains one owner-accepted-with-limitations practitioner result; no second independent run or case study exists"],
       "affectedGoals": ["GOAL-USER", "GOAL-ORGANIZATIONAL"],
       "affectedJourneys": ["JOURNEY-PRIMARY"],
       "dependencies": ["CAP-004", "CAP-011", "CAP-012"],
-      "resolutionCondition": "Complete the next proof event with retained inputs, output, verification, and human review evidence.",
-      "status": "OPEN"
-    },
-    {
-      "id": "BLK-003",
-      "priority": "P2",
-      "summary": "No named reviewer, design partner, or adopting organization is recorded for outcome acceptance.",
-      "evidence": ["Repository documentation assigns human review but names no owner or adopter"],
-      "affectedGoals": ["GOAL-USER", "GOAL-ORGANIZATIONAL"],
-      "affectedJourneys": ["JOURNEY-PRIMARY"],
-      "dependencies": [],
-      "resolutionCondition": "Record an authorized reviewer and a bounded target workflow for the next proof event.",
+      "resolutionCondition": "Complete PROOF-002 with a second independent result, comparison, verification, and authorized human disposition.",
       "status": "OPEN"
     }
   ],
   "proofEvents": [
     {
       "id": "PROOF-001",
-      "status": "NEXT",
+      "status": "ACCEPTED_WITH_LIMITATIONS",
       "name": "Independent governed use of Constraint Compilation",
       "whyItMatters": "It is the smallest event that can distinguish a well-structured technique card from a technique that creates reproducible user value.",
-      "prerequisites": ["Name an authorized reviewer and bounded real workflow", "Record the trial without secrets or proprietary material"],
+      "prerequisites": ["Name an authorized reviewer; the bounded searchable-documentation workflow is assigned", "Retain the sanitized trial and procedural deviations"],
       "acceptanceCriteria": ["A practitioner who did not author the card follows the canonical workflow", "Every compiled constraint traces to supplied evidence", "The result preserves scope and authority boundaries", "A human reviewer accepts or rejects the output against the documented contract", "Failures and surprises are retained"],
       "requiredEvidence": ["Experiment record", "Inputs or safe redactions", "Produced outcome contract", "Verification results", "Human review disposition"],
-      "currentBlockers": ["BLK-001", "BLK-003"]
+      "currentBlockers": []
+    },
+    {
+      "id": "PROOF-002",
+      "status": "NEXT",
+      "name": "Independent repetition of Constraint Compilation",
+      "whyItMatters": "PROOF-001 established one accepted-with-limitations bounded trial; repetition tests reproducibility rather than one-run plausibility.",
+      "prerequisites": ["Retain the PROOF-001 artifact and disposition", "Name a second practitioner whose non-authorship is verified", "Preserve the stricter source-inspection boundary or approve deviations before execution"],
+      "acceptanceCriteria": ["The second practitioner did not author the card", "Every compiled constraint traces to supplied evidence", "The result preserves scope and authority boundaries", "Results and failures are compared with PROOF-001", "An authorized human accepts or rejects the repetition"],
+      "requiredEvidence": ["Repetition record", "Inputs or safe redactions", "Produced outcome contract", "Comparison with PROOF-001", "Verification results", "Human review disposition"],
+      "currentBlockers": ["BLK-001"]
     }
   ],
   "commercialEvidence": [
@@ -345,8 +345,8 @@
     {"id": "COMMERCIAL-001", "kind": "commercial", "targetBuyer": "UNKNOWN", "buyingTrigger": "UNKNOWN", "offer": "UNKNOWN", "priceHypothesis": "UNKNOWN", "prospects": "UNKNOWN", "designPartners": "UNKNOWN", "paidCustomers": "UNKNOWN", "activation": "UNVERIFIED", "usage": "UNVERIFIED", "retention": "UNVERIFIED", "measuredOutcome": "UNVERIFIED", "revenueEvidence": "UNVERIFIED"}
   ],
   "nextActions": [
-    {"order": 1, "action": "Assign a bounded real workflow, independent practitioner, and authorized reviewer to EXP-20260915-001.", "addresses": ["BLK-001", "BLK-003"]},
-    {"order": 2, "action": "Execute the proposed protocol and retain the result, negative evidence, and human disposition.", "addresses": ["BLK-001"]},
-    {"order": 3, "action": "Reconcile the seed technique status and adapter roadmap from the trial evidence without automatic promotion.", "addresses": ["RISK-002"]}
+    {"order": 1, "action": "Design a bounded independent repetition that verifies practitioner non-authorship and fixes or pre-authorizes the inspection boundary.", "addresses": ["BLK-001"]},
+    {"order": 2, "action": "Run the repetition and retain its result, failures, comparison, and human disposition.", "addresses": ["BLK-001"]},
+    {"order": 3, "action": "Reassess reproducibility and the seed technique status without automatic promotion.", "addresses": ["RISK-002"]}
   ]
 }
