@@ -10,7 +10,7 @@ A practitioner or AI agent should be able to find and apply an appropriate techn
 
 ## Current Reality
 
-The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validators, automated intake tests, and GitHub Actions configuration. A preview-first, retention-gated experiment intake is locally tested. One sanitized `PROOF-001` experiment is active with a fresh practitioner's retained contract, failure-scenario check, procedural deviations, and repository-owner acceptance with limitations. The canonical-state control plane remains locally tested. A non-authoritative capability-horizon backlog preserves options beyond the current adapter and licensing explorations; those entries are not current capabilities or delivery commitments. There is no website/PWA, Codex skill adapter, general catalog CLI, MCP server, deployment configuration, independent repetition, observed user use, case study, or commercial evidence.
+The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validators, automated intake tests, and GitHub Actions configuration. A preview-first, retention-gated experiment intake is locally tested. One sanitized `PROOF-001` experiment is active with a fresh practitioner's retained contract, failure-scenario check, procedural deviations, and repository-owner acceptance with limitations. A validated proposed `PROOF-002` protocol fixes the repetition boundary but has not been run. The canonical-state control plane remains locally tested. A non-authoritative capability-horizon backlog preserves options beyond the current adapter and licensing explorations; those entries are not current capabilities or delivery commitments. There is no website/PWA, Codex skill adapter, general catalog CLI, MCP server, deployment configuration, independent repetition, observed user use, case study, or commercial evidence.
 
 ## Capability State
 
@@ -56,7 +56,7 @@ Finding and reading a technique is implemented through the catalogs and canonica
 
 ## Next Actions
 
-1. Design a bounded repetition with verified practitioner non-authorship and an explicit inspection boundary.
+1. Assign a second non-author practitioner and authorized reviewer to `EXP-20260924-001`.
 2. Run it and retain the result, failures, comparison, and human disposition.
 3. Reassess reproducibility and technique status without automatic promotion.
 

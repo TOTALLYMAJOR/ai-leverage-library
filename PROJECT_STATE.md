@@ -57,6 +57,7 @@ Acquisition journey: a contributor or AI agent previews a sanitized experiment r
 - The scoped backlog, intake, experiment, tests, and state changes passed `npm run validate` locally on 2026-09-24.
 - A preview-first experiment-intake command and lifecycle validator are implemented and locally `TESTED`. The command rejects raw prompt/source flags and requires explicit retention authorization before writing.
 - One sanitized active experiment operationalized `PROOF-001`. A fresh practitioner produced a retained contract and failure-scenario check; the repository owner accepted the artifact with its documented deviations on 2026-09-24.
+- A validated proposed `PROOF-002` repetition protocol now fixes the frozen source packet, isolation boundary, comparison method, and human-review gates; it has not been run.
 - A capability-horizon backlog now records speculative options beyond the current adapter and licensing explorations; none of its entries is implemented, prioritized, or promoted into canonical capability state.
 - No searchable website/PWA, Codex skill, general catalog CLI, or MCP implementation exists. These remain specified or planned adapters; the experiment-intake command is a narrower tested workflow.
 - One accepted-with-limitations practitioner result is retained. No independent repetition, case study, deployment receipt, observed user use, retention, measured outcome, paid customer, or revenue evidence exists in the repository.
@@ -86,7 +87,7 @@ Creating the horizon backlog changes planning visibility, not product capability
 
 **Why It Matters:** `PROOF-001` established one accepted-with-limitations bounded trial. Repetition is the smallest next event that can test reproducibility rather than one-run plausibility.
 
-**Prerequisites:** Retain the `PROOF-001` artifact and disposition; name a second practitioner whose non-authorship is verified; preserve the stricter source-inspection boundary or explicitly approve deviations before execution.
+**Prerequisites:** Retain the `PROOF-001` artifact and disposition; use the proposed `EXP-20260924-001` protocol; name a second practitioner whose non-authorship is verified; preserve the stricter source-inspection boundary or explicitly approve deviations before execution.
 
 **Acceptance Criteria:** The second practitioner did not author the card; every compiled constraint traces to supplied evidence; authority and scope boundaries are preserved; results and failures are compared with `PROOF-001`; an authorized human accepts or rejects the repetition.
 
@@ -98,7 +99,7 @@ Engineering work is derived backward from this event. Building an adapter does n
 
 ## Next Actions
 
-1. Design a bounded independent repetition that verifies practitioner non-authorship and fixes or pre-authorizes the inspection boundary.
+1. Assign a second non-author practitioner and authorized reviewer to the validated `EXP-20260924-001` protocol.
 2. Run the repetition and retain its result, failures, comparison, and human disposition.
 3. Reassess reproducibility and the seed technique status without automatic promotion.
 

@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added a validated proposed `PROOF-002` protocol for isolated independent repetition, comparison with `PROOF-001`, and authorized human disposition.
 - Recorded the repository owner's acceptance-with-limitations disposition for `PROOF-001` without automatically promoting the technique or inflating repeatability and outcome claims.
 - Ran the bounded `PROOF-001` practitioner trial for a searchable documentation/PWA contract, retained its source-traced result and failures, and left it active for independent repetition after authorized acceptance with limitations.
 - Added a governed experiment-intake command with preview-first writes, retention authorization, catalog overlap reporting, and raw-source rejection.

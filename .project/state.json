@@ -334,7 +334,7 @@
       "status": "NEXT",
       "name": "Independent repetition of Constraint Compilation",
       "whyItMatters": "PROOF-001 established one accepted-with-limitations bounded trial; repetition tests reproducibility rather than one-run plausibility.",
-      "prerequisites": ["Retain the PROOF-001 artifact and disposition", "Name a second practitioner whose non-authorship is verified", "Preserve the stricter source-inspection boundary or approve deviations before execution"],
+      "prerequisites": ["Retain the PROOF-001 artifact and disposition", "Use the proposed EXP-20260924-001 repetition protocol", "Name a second practitioner whose non-authorship is verified", "Preserve the stricter source-inspection boundary or approve deviations before execution"],
       "acceptanceCriteria": ["The second practitioner did not author the card", "Every compiled constraint traces to supplied evidence", "The result preserves scope and authority boundaries", "Results and failures are compared with PROOF-001", "An authorized human accepts or rejects the repetition"],
       "requiredEvidence": ["Repetition record", "Inputs or safe redactions", "Produced outcome contract", "Comparison with PROOF-001", "Verification results", "Human review disposition"],
       "currentBlockers": ["BLK-001"]
@@ -345,7 +345,7 @@
     {"id": "COMMERCIAL-001", "kind": "commercial", "targetBuyer": "UNKNOWN", "buyingTrigger": "UNKNOWN", "offer": "UNKNOWN", "priceHypothesis": "UNKNOWN", "prospects": "UNKNOWN", "designPartners": "UNKNOWN", "paidCustomers": "UNKNOWN", "activation": "UNVERIFIED", "usage": "UNVERIFIED", "retention": "UNVERIFIED", "measuredOutcome": "UNVERIFIED", "revenueEvidence": "UNVERIFIED"}
   ],
   "nextActions": [
-    {"order": 1, "action": "Design a bounded independent repetition that verifies practitioner non-authorship and fixes or pre-authorizes the inspection boundary.", "addresses": ["BLK-001"]},
+    {"order": 1, "action": "Assign a second non-author practitioner and authorized reviewer to the validated EXP-20260924-001 protocol.", "addresses": ["BLK-001"]},
     {"order": 2, "action": "Run the repetition and retain its result, failures, comparison, and human disposition.", "addresses": ["BLK-001"]},
     {"order": 3, "action": "Reassess reproducibility and the seed technique status without automatic promotion.", "addresses": ["RISK-002"]}
   ]
