@@ -10,7 +10,7 @@ A practitioner or AI agent should be able to find and apply an appropriate techn
 
 ## Current Reality
 
-The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validators, automated intake tests, and GitHub Actions configuration. A preview-first, retention-gated experiment intake is locally tested. One sanitized `PROOF-001` experiment is active with a fresh practitioner's retained contract, failure-scenario check, procedural deviations, and repository-owner acceptance with limitations. A validated proposed `PROOF-002` protocol fixes the repetition boundary but has not been run. The canonical-state control plane remains locally tested. A non-authoritative capability-horizon backlog preserves options beyond the current adapter and licensing explorations; those entries are not current capabilities or delivery commitments. There is no website/PWA, Codex skill adapter, general catalog CLI, MCP server, deployment configuration, independent repetition, observed user use, case study, or commercial evidence.
+The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validators, automated intake tests, and GitHub Actions configuration. A preview-first, retention-gated experiment intake is locally tested. `PROOF-001` retains repository-owner acceptance with limitations. `PROOF-002` retains a materially consistent second contract and controller comparison but awaits human disposition of unverified runtime identity and non-enforced broader-filesystem isolation. The canonical-state control plane remains locally tested. There is no website/PWA, Codex skill adapter, general catalog CLI, MCP server, deployment configuration, observed user use, case study, or commercial evidence.
 
 ## Capability State
 
@@ -26,7 +26,7 @@ The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validat
 ## What Is Not Proven
 
 - Constraint Compilation repeatability or user value.
-- Protocol-compliant independent repetition of `EXP-20260915-001`.
+- Authorized acceptance of the `PROOF-002` repetition and its retained limitations.
 - Any evidence-level or capability promotion beyond the accepted bounded-trial minimum.
 - Current GitHub Actions execution for this revision.
 - Deployment, use, acceptance, adoption, retention, measured outcome, or revenue.
@@ -34,7 +34,7 @@ The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validat
 
 ## Primary Journey
 
-Finding and reading a technique is implemented through the catalogs and canonical card. One application and human disposition are retained with limitations; repeatability, observed use, and outcome remain `UNVERIFIED`. The supporting authoring journey is structurally implemented, but no retained example proves the full review workflow.
+Finding and reading a technique is implemented through the catalogs and canonical card. One accepted application and one repetition awaiting disposition are retained; accepted repeatability, observed use, and outcome remain `UNVERIFIED`. The supporting authoring journey is structurally implemented, but no retained example proves the full review workflow.
 
 ## Critical Decisions
 
@@ -48,7 +48,7 @@ Finding and reading a technique is implemented through the catalogs and canonica
 
 ## Critical Blockers
 
-- `BLK-001` (P1): no independent repetition proves reproducibility under documented conditions.
+- `BLK-001` (P1): the retained repetition awaits disposition of its independence and access-control limitations.
 
 ## Next Proof Event
 
@@ -56,9 +56,9 @@ Finding and reading a technique is implemented through the catalogs and canonica
 
 ## Next Actions
 
-1. Assign a second non-author practitioner and authorized reviewer to `EXP-20260924-001`.
-2. Run it and retain the result, failures, comparison, and human disposition.
-3. Reassess reproducibility and technique status without automatic promotion.
+1. Obtain authorized acceptance or rejection of `EXP-20260924-001`, including its retained limitations.
+2. Reconcile the blocker and proof event if accepted; retain reasons and run a stricter repetition if rejected.
+3. Verify the published revision and provider CI after explicit push authorization.
 
 ## Commercial / Operational Evidence
 

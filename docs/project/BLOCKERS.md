@@ -2,15 +2,15 @@
 
 Only conditions that prevent the next meaningful outcome belong here. Broader ideas remain in `EXPLORATIONS.md`.
 
-## BLK-001 - No independent repetition of the primary outcome
+## BLK-001 - Repetition awaiting disposition
 
 ```text
 Priority: P1
-Evidence: `EXP-20260915-001` retains one owner-accepted-with-limitations practitioner result, but no second independent run tests repeatability under documented conditions; the seed card remains at evidence_level: concept.
+Evidence: `EXP-20260924-001` produced a materially consistent source-traced result, but runtime identity is unverified and broader filesystem non-access was practitioner-reported rather than technically enforced.
 Affected Goal: GOAL-USER; GOAL-ORGANIZATIONAL
 Affected Journey: JOURNEY-PRIMARY
 Dependencies: CAP-004; CAP-011; CAP-012
-Resolution Condition: Complete PROOF-002 with a second independent result, comparison, verification, and authorized human disposition.
+Resolution Condition: An authorized human accepts or rejects PROOF-002 and explicitly decides whether the retained independence and access-control limitations satisfy the proof contract or require a stricter rerun.
 Status: OPEN
 ```
 

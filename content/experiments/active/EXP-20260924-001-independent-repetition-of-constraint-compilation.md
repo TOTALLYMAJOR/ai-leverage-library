@@ -1,7 +1,7 @@
 ---
 id: EXP-20260924-001
 title: "Independent repetition of Constraint Compilation"
-status: proposed
+status: active
 candidate_technique: AI-DISCOVER-001
 owner: "repository maintainer"
 started: 2026-09-24
@@ -33,6 +33,9 @@ Not yet run.
 - Inspection boundary: provide an isolated packet containing only the named source files, technique, and task brief. Do not expose repository history, current project state, prior result, operational skills, or unrelated workspace files to the practitioner.
 - Authority boundary: the practitioner may produce an outcome contract only. No repository write, implementation, deployment, promotion, or lifecycle authority is granted.
 - Reviewer: an authorized human must accept or reject the repetition after the controller compares it with `PROOF-001`.
+- Practitioner: fresh context-isolated agent task `/root/proof002_practitioner`; runtime model identity is `UNVERIFIED`.
+- Retained result: `docs/project/evidence/EXP-20260924-001-practitioner-outcome-contract.md`.
+- Controller comparison: `docs/project/evidence/EXP-20260924-001-controller-comparison.md`.
 
 ## Method
 
@@ -46,27 +49,34 @@ Not yet run.
 
 ## Results
 
-Not run. No result or outcome is claimed.
+The second practitioner returned a complete outcome contract with twenty source-traced constraints and a passing preference-to-authority failure test. The result preserves canonical-card authority, static-site/PWA alternatives, the offline hypothesis boundary, evidence separation, licensing limits, human decisions, and the prohibition on automatic implementation or lifecycle promotion.
+
+The controller found no material contradiction with `PROOF-001`. Differences were compatible elaborations, including finer constraint granularity and an explicit honest no-result state. This is a completed practitioner output, not proof of implementation, deployment, observed use, user value, or accepted reproducibility.
 
 ## Verification
 
-Pending execution. Verification must establish all of the following:
+Execution verification established the following:
 
-- every supplied file matches its recorded frozen-revision fingerprint;
-- every compiled constraint traces to the supplied packet;
-- the practitioner did not inspect the prior outcome contract before finalizing;
+- all six supplied files matched the recorded fingerprints; the packet contained zero symlinks and was read-only;
+- every compiled constraint `C01`-`C20` traces to the supplied packet;
+- the prior outcome was not supplied and the practitioner reported inspecting only the six packet files;
 - the result preserves scope and authority boundaries;
-- differences from `PROOF-001` are classified as compatible variation, contradiction, omission, or unsupported addition;
-- the failure-scenario test detects at least one attempted upgrade of a hypothesis or preference into authority;
-- an authorized human accepts or rejects the repetition with retained reasons.
+- controller comparison classified the observed differences as compatible variations or elaborations and found no material contradiction;
+- the failure-scenario test detected mandatory offline-PWA behavior, invented framework choice, and local-evidence inflation; and
+- authorized human acceptance or rejection remains pending.
+
+Practitioner non-authorship and prior-result blindness are only partially verified: the task used a fresh context and the practitioner reported compliance, but historical identity and broader-filesystem non-access were not independently proven.
 
 ## Failures and surprises
 
-None observed because the experiment has not run.
+- Runtime model identity is unavailable.
+- The practitioner packet directory was read-only, but broader filesystem read access was not technically prevented. The practitioner reported no access outside the six supplied files.
+- The first combined packet display truncated part of `BACKLOG.md`; the practitioner reread only that permitted file in bounded line ranges.
+- The repetition independently selected the same offline-PWA constraint-laundering failure pattern as `PROOF-001`; this is a consistent signal but not, by itself, proof of reproducibility.
 
 ## Decision
 
-Proposed. Promote, revise, repeat, or reject only after execution and human review.
+Active and awaiting authorized human disposition. Keep `BLK-001` open and do not change technique status or evidence level automatically. The reviewer must decide whether the retained non-authorship and access-control limitations satisfy the proof contract or require a stricter rerun.
 
 ## Human authority
 
