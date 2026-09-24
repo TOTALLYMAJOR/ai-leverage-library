@@ -27,6 +27,8 @@ Not yet run.
 - Frozen source revision: `f0756da78ad0b985b0ac4997f5856ad4168d5e64`, matching `PROOF-001`.
 - Source packet: `README.md`, `PROJECT_STATE.md`, `BACKLOG.md`, and `docs/project/EXPLORATIONS.md` from the frozen revision.
 - Technique: `content/techniques/discover/constraint-compilation.md` from the frozen revision.
+- Practitioner brief: `docs/project/evidence/EXP-20260924-001-practitioner-brief.md`.
+- Integrity manifest: `docs/project/evidence/EXP-20260924-001-source-manifest.md`.
 - Practitioner boundary: use a practitioner who did not author the technique or `PROOF-001` artifact and who cannot inspect `docs/project/evidence/EXP-20260915-001-outcome-contract.md` before returning a final result.
 - Inspection boundary: provide an isolated packet containing only the named source files, technique, and task brief. Do not expose repository history, current project state, prior result, operational skills, or unrelated workspace files to the practitioner.
 - Authority boundary: the practitioner may produce an outcome contract only. No repository write, implementation, deployment, promotion, or lifecycle authority is granted.
