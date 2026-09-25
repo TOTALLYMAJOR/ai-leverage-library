@@ -4,6 +4,10 @@ A Git-native field manual for useful things people can accomplish with AI that a
 
 This is not a prompt dump. Each technique defines an outcome, required inputs, a reproducible workflow, verification, predictable failure modes, and the point where human authority remains required.
 
+## Role in the Proofloom ecosystem
+
+AI Leverage Library curates evidence about techniques that a Proofloom investigator or human operator may choose to use. It does not execute a selected strategy, route strategies automatically for Proofloom, determine a consuming repository's authority, approve work, or turn technique guidance into proof of an outcome. Its technique lifecycle and evidence status remain owned by this repository; Proofloom keeps any resulting recommendation and human decision separate.
+
 ## Design principles
 
 - Organize by outcomes, not vendors or models.
