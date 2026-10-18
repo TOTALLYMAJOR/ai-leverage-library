@@ -21,7 +21,7 @@ A second practitioner who did not author the technique can independently produce
 
 ## Conditions
 
-Not yet run.
+Technical repetition completed; authorized human disposition pending.
 
 - Purpose: repeat `PROOF-001` without treating its accepted result as reproducibility evidence.
 - Frozen source revision: `f0756da78ad0b985b0ac4997f5856ad4168d5e64`, matching `PROOF-001`.

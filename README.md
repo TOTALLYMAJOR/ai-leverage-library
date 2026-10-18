@@ -77,4 +77,4 @@ Status meanings:
 
 ## Current state
 
-Version 0.1.0 establishes the repository contract, templates, validation, CI configuration, one seed technique, and a tested experiment-intake path with one proposed trial. The trial has not run, and the library does not claim operational verification, field validation, or observed user value. See [the executive state report](docs/project/EXECUTIVE_STATE.md) for the current evidence reconciliation.
+Version 0.1.0 establishes the repository contract, templates, validation, CI configuration, one seed technique, and a tested experiment-intake path. One bounded trial was accepted with limitations; a second, materially consistent repetition awaits authorized human disposition. Accepted repeatability, field validation, observed user value, and deployment remain unverified. See [the executive state report](docs/project/EXECUTIVE_STATE.md) for the current evidence reconciliation.
