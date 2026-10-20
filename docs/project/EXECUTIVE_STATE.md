@@ -28,7 +28,7 @@ The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validat
 - Constraint Compilation repeatability or user value.
 - Independent practitioner identity, runtime identity, and technically enforced isolation of the repetition.
 - Any evidence-level or capability promotion beyond the accepted bounded-trial minimum.
-- Current GitHub Actions execution for this revision.
+- CI execution for revisions beyond the snapshots in the retained provider receipt.
 - Deployment, real-world use, adoption, retention, measured outcome, or revenue.
 - A buyer, offer, price, design partner, paid customer, or commercial model.
 
@@ -60,12 +60,11 @@ Finding and reading a technique is implemented through the catalogs and canonica
 
 1. Obtain owner selection of the next proof contract, including workflow, evidence, reviewer, and pass/fail and stop conditions.
 2. Preserve the qualified acceptances and remaining evidence limitations without automatic promotion.
-3. Validate and publish the disposition reconciliation through a reviewed pull request.
 
 ## Commercial / Operational Evidence
 
-Repository structure and local command results are available. Current CI provider execution, deployment, user use, organizational impact, and all commercial evidence are `UNVERIFIED`. Because this is presently a library/developer utility, the immediate proof target is organizational user value rather than revenue.
+Repository structure and local command results are available. PR #3 is merged; GitHub Actions succeeded for its PR head and main merge commit `9a9f8ddf7b6ed2c46e8f911a7348f351d3ca5f0f`, as recorded in the [publication and CI receipt](evidence/CI-20261020-pr3-main-validation.md). Later CI results, deployment, user use, organizational impact, and all commercial evidence remain `UNVERIFIED`. Because this is presently a library/developer utility, the immediate proof target is organizational user value rather than revenue.
 
 ## Confidence
 
-**HIGH** confidence in repository structure, configured contracts, local branch/worktree inventory, and the absence of implemented adapters in the inspected checkout. **LOW** confidence in user value, operations, and commercial state because no external or human outcome evidence is retained. Overall state confidence is **MEDIUM**.
+**HIGH** confidence in repository structure, configured contracts, local branch/worktree inventory, and the absence of implemented adapters in the inspected checkout. **LOW** confidence in real-world user value and commercial state because observed-use and outcome evidence is not retained. Provider execution is verified only for the listed CI snapshots. Overall state confidence is **MEDIUM**.

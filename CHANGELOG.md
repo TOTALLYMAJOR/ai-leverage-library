@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Retained PR #3 merge and successful PR/main GitHub Actions receipts, corrected stale CI uncertainty, and removed the completed publication action. Capability lifecycle states, qualified acceptance limits, and the owner-input requirement for PROOF-003 are unchanged.
+
 - Recorded the owner's acceptance of `PROOF-002` with its documented independence and access-control limitations, closed the disposition blocker, and left the next proof contract awaiting owner selection. Technique lifecycle, evidence level, and unverified outcome claims remain unchanged.
 - Corrected current next-proof and repetition wording, retained the exact six-file frozen `PROOF-002` packet, and added hash verification to normal validation. The human disposition and acceptance boundaries remain unchanged.
 - Ran the bounded `PROOF-002` repetition, retained its source-traced outcome contract and controller comparison, and left reproducibility unverified pending authorized disposition of the recorded independence and access-control limitations.

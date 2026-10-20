@@ -68,6 +68,7 @@ Acquisition journey: a contributor or AI agent previews a sanitized experiment r
 - `PROOF-002` produced a second source-traced contract and controller comparison. The owner accepted the bounded artifact with its documented limitations on 2026-10-20. Runtime identity remains unverified and broader filesystem non-access was practitioner-reported rather than technically enforced.
 - A capability-horizon backlog now records speculative options beyond the current adapter and licensing explorations; none of its entries is implemented, prioritized, or promoted into canonical capability state.
 - No searchable website/PWA, Codex skill, general catalog CLI, or MCP implementation exists. These remain specified or planned adapters; the experiment-intake command is a narrower tested workflow.
+- [PR #3](https://github.com/TOTALLYMAJOR/ai-leverage-library/pull/3) published the qualified disposition reconciliation; its PR and merged-main validation runs passed all 18 tests and the remaining validation checks. See the [snapshot-bound receipt](docs/project/evidence/CI-20261020-pr3-main-validation.md).
 - Two accepted-with-limitations bounded results are retained. No case study, deployment receipt, observed user use, retention, measured outcome, paid customer, or revenue evidence is established by those artifacts.
 - Before this control-plane commit, available history contained two commits and one material branch, `main`; no additional worktree was registered.
 - The public source remains `UNLICENSED`; public visibility is not reuse permission.
@@ -81,7 +82,7 @@ Creating the horizon backlog changes planning visibility, not product capability
 ## Reconciled Contradictions
 
 - `content/techniques/discover/constraint-compilation.md` labels the technique `experimental` while its `evidence_level` is `concept`. The accepted-with-limitations bounded trial now satisfies the minimum experimental trial requirement, but repeatability and observed outcomes remain unverified. The capability remains `SPECIFIED`, and the card was not silently relabeled or promoted.
-- GitHub Actions configuration proves intended CI behavior, not a current provider run. Current CI execution is `UNVERIFIED` in this reconciliation.
+- GitHub Actions provider execution is verified for PR #3 and merged-main commit `9a9f8ddf7b6ed2c46e8f911a7348f351d3ca5f0f`: both runs succeeded on 2026-10-20. The [publication and CI receipt](docs/project/evidence/CI-20261020-pr3-main-validation.md) binds these claims to exact snapshots; later commits need their own results.
 
 ## Critical Blockers
 
@@ -113,7 +114,6 @@ Engineering work is derived backward from this event. Building an adapter does n
 
 1. Obtain owner selection of the next bounded proof contract; the workflow, evidence, reviewer, and pass/fail conditions remain `NEEDS_OWNER_INPUT`.
 2. Preserve the runtime-identity and access-control limitations, unverified outcomes, and separate promotion authority.
-3. Validate and publish this disposition reconciliation through a reviewed pull request.
 
 ## Reconciliation Rule
 
