@@ -14,7 +14,7 @@
     "primaryUser": "Practitioners and AI agents seeking reproducible, authority-bounded AI workflows",
     "economicBuyer": "UNKNOWN",
     "problemSolved": "Useful AI workflows are commonly scattered across prompts, demonstrations, and tribal knowledge without reproducible verification or explicit human authority boundaries.",
-    "stage": "0.1.0 repository scaffold with one seed technique, tested experiment intake, one accepted-with-limitations trial, and one completed repetition awaiting human disposition; product use and organizational value are UNVERIFIED",
+    "stage": "0.1.0 repository scaffold with one seed technique, tested experiment intake, two accepted-with-limitations bounded trial results; product use and organizational value are UNVERIFIED",
     "deploymentTarget": "UNVERIFIED - a static documentation site or PWA is specified, but no provider or deployment configuration exists"
   },
   "goals": [
@@ -105,10 +105,10 @@
       "evidence": [
         {"type": "source", "path": "content/techniques/discover/constraint-compilation.md", "detail": "Workflow and verification contract"},
         {"type": "experiment-result", "path": "docs/project/evidence/EXP-20260915-001-outcome-contract.md", "detail": "Repository owner accepted the fresh practitioner's traced contract and failure-scenario check with documented limitations on 2026-09-24"},
-        {"type": "experiment-result", "path": "docs/project/evidence/EXP-20260924-001-controller-comparison.md", "detail": "Second source-traced contract is materially consistent with PROOF-001; human disposition and acceptance of retained independence and access-control limitations are pending"}
+        {"type": "experiment-result", "path": "docs/project/evidence/EXP-20260924-001-controller-comparison.md", "detail": "Second source-traced contract is materially consistent with PROOF-001; repository-owner acceptance with the documented independence and access-control limitations is retained in docs/project/evidence/EXP-20260924-001-human-disposition.md"}
       ],
       "dependencies": ["CAP-001"],
-      "blockers": ["BLK-001"],
+      "blockers": ["BLK-004"],
       "last_verified": "2026-09-24",
       "owner_or_authority": "Human reviewer for any promotion beyond specified",
       "is_current": true
@@ -217,7 +217,7 @@
         {"type": "source", "path": "content/case-studies/.gitkeep", "detail": "Case-study location"}
       ],
       "dependencies": [],
-      "blockers": ["BLK-001"],
+      "blockers": ["BLK-004"],
       "last_verified": "2026-08-25",
       "owner_or_authority": "Repository contributors and human reviewers",
       "is_current": true
@@ -258,8 +258,8 @@
       "nextState": "Retain a result or experiment and reassess the technique's evidence status",
       "outcome": "A useful result whose limits and authority are explicit",
       "evidence": ["CATALOG.md", "content/techniques/discover/constraint-compilation.md", "docs/project/evidence/EXP-20260915-001-outcome-contract.md", "docs/project/evidence/EXP-20260924-001-practitioner-outcome-contract.md", "docs/project/evidence/EXP-20260924-001-controller-comparison.md"],
-      "missingProof": ["Authorized disposition of the repetition, real use, and measured outcome remain unverified"],
-      "blockers": ["BLK-001"]
+      "missingProof": ["Independent runtime/isolation proof, real use, and measured outcome remain unverified"],
+      "blockers": ["BLK-004"]
     },
     {
       "id": "JOURNEY-AUTHOR",
@@ -280,10 +280,10 @@
       "action": "Preview a sanitized proposed experiment, review catalog overlap, explicitly authorize retention, and validate the resulting record",
       "stateChange": "An unstructured candidate becomes a traceable proposed experiment without claiming execution or outcome evidence",
       "authorityOrEvidence": "Sanitized source reference, retention authorization, validated experiment record, and human lifecycle gates",
-      "nextState": "Obtain human disposition of the retained repetition or require a stricter rerun with retained reasons",
-      "outcome": "Two structurally valid active experiments retain one accepted-with-limitations result and one repetition awaiting disposition",
+      "nextState": "Retain the accepted-with-limitations result and obtain owner selection of the next proof contract before execution",
+      "outcome": "Two structurally valid active experiments retain qualified owner acceptance without lifecycle promotion",
       "evidence": ["scripts/create-experiment.mjs", "scripts/validate-experiments.mjs", "content/experiments/active/EXP-20260915-001-constraint-compilation-independent-trial.md", "content/experiments/active/EXP-20260924-001-independent-repetition-of-constraint-compilation.md", "docs/project/evidence/EXP-20260915-001-outcome-contract.md", "docs/project/evidence/EXP-20260924-001-controller-comparison.md"],
-      "missingProof": ["Independent contributor intake use, authorized PROOF-002 disposition, and observed user outcome remain unverified"],
+      "missingProof": ["Independent contributor intake use and observed user outcome remain unverified"],
       "blockers": []
     }
   ],
@@ -294,7 +294,8 @@
     {"id": "DEC-004", "status": "ACTIVE", "summary": "Keep websites, skills, CLIs, and MCP servers as adapters over a portable content core.", "evidence": ["README.md"]},
     {"id": "DEC-005", "status": "ACTIVE", "summary": "The public repository grants no reuse license unless a separate license is added.", "evidence": ["LICENSE", "package.json"]},
     {"id": "DEC-006", "status": "ACTIVE", "summary": "The capability horizon backlog is a non-authoritative option inventory; entries require explicit promotion before they become explorations, roadmap commitments, or canonical capabilities.", "evidence": ["BACKLOG.md", "PROJECT_STATE.md"]},
-    {"id": "DEC-007", "status": "ACTIVE", "summary": "Experiment acquisition is preview-first, rejects raw prompt or source flags, and requires explicit retention authorization before writing a proposed record.", "evidence": ["scripts/create-experiment.mjs", "scripts/lib/experiment-intake.mjs", "CONTRIBUTING.md"]}
+    {"id": "DEC-007", "status": "ACTIVE", "summary": "Experiment acquisition is preview-first, rejects raw prompt or source flags, and requires explicit retention authorization before writing a proposed record.", "evidence": ["scripts/create-experiment.mjs", "scripts/lib/experiment-intake.mjs", "CONTRIBUTING.md"]},
+    {"id": "DEC-008", "status": "ACTIVE", "summary": "Record owner acceptance of PROOF-002 with documented limitations; close only its disposition blocker, preserve existing lifecycle states, and leave the next proof contract awaiting owner selection.", "evidence": ["docs/project/evidence/EXP-20260924-001-human-disposition.md"]}
   ],
   "integrations": [
     {"id": "INT-001", "name": "Git", "state": "IMPLEMENTED", "evidence": ["Repository metadata identifies main as the active branch"]},
@@ -303,21 +304,55 @@
     {"id": "INT-004", "name": "Node.js", "state": "IMPLEMENTED", "evidence": ["package.json requires Node >=20 and validation scripts use node:fs and node:path"]}
   ],
   "risks": [
-    {"id": "RISK-001", "severity": "HIGH", "summary": "Technique value remains unverified without accepted independent repetition and observed outcomes.", "evidence": ["One accepted-with-limitations practitioner result and a repetition awaiting authorized human disposition are retained; no case study or observed outcome is established"]},
-    {"id": "RISK-002", "severity": "MEDIUM", "summary": "The seed card's evidence level may be mistaken for accepted reproducibility before human disposition of the second result.", "evidence": ["content/techniques/discover/constraint-compilation.md remains experimental and concept; PROOF-002 retains unresolved independence and access-control limitations"]},
+    {"id": "RISK-001", "severity": "HIGH", "summary": "Technique value remains unverified without accepted independent repetition and observed outcomes.", "evidence": ["Two accepted-with-limitations bounded artifacts are retained; independent runtime/isolation verification, case studies, and observed outcomes remain unverified"]},
+    {"id": "RISK-002", "severity": "MEDIUM", "summary": "Qualified human acceptance may be mistaken for proven reproducibility or technique promotion.", "evidence": ["content/techniques/discover/constraint-compilation.md remains experimental and concept; PROOF-002 retains unresolved independence and access-control limitations"]},
     {"id": "RISK-003", "severity": "MEDIUM", "summary": "Public visibility may be mistaken for permission to reuse despite the all-rights-reserved license.", "evidence": ["LICENSE", "package.json"]},
-    {"id": "RISK-004", "severity": "MEDIUM", "summary": "Two practitioner artifacts may be mistaken for an accepted reproducible or observed user outcome.", "evidence": ["The repetition awaits authorized disposition, and neither experiment proves observed use or measured outcome"]}
+    {"id": "RISK-004", "severity": "MEDIUM", "summary": "Two practitioner artifacts may be mistaken for an accepted reproducible or observed user outcome.", "evidence": ["Both bounded results are accepted with limitations; neither experiment proves observed use or measured outcome"]}
   ],
   "blockers": [
     {
       "id": "BLK-001",
       "priority": "P1",
       "summary": "The retained repetition lacks authorized disposition and resolution of its independence and access-control limitations.",
-      "evidence": ["EXP-20260924-001 produced a materially consistent source-traced result, but runtime identity is unverified and broader filesystem non-access was practitioner-reported rather than technically enforced"],
-      "affectedGoals": ["GOAL-USER", "GOAL-ORGANIZATIONAL"],
-      "affectedJourneys": ["JOURNEY-PRIMARY"],
-      "dependencies": ["CAP-004", "CAP-011", "CAP-012"],
+      "evidence": [
+        "EXP-20260924-001 produced a materially consistent source-traced result, but runtime identity is unverified and broader filesystem non-access was practitioner-reported rather than technically enforced",
+        "docs/project/evidence/EXP-20260924-001-human-disposition.md"
+      ],
+      "affectedGoals": [
+        "GOAL-USER",
+        "GOAL-ORGANIZATIONAL"
+      ],
+      "affectedJourneys": [
+        "JOURNEY-PRIMARY"
+      ],
+      "dependencies": [
+        "CAP-004",
+        "CAP-011",
+        "CAP-012"
+      ],
       "resolutionCondition": "An authorized human accepts or rejects PROOF-002 and explicitly decides whether the retained independence and access-control limitations satisfy the proof contract or require a stricter rerun.",
+      "status": "CLOSED",
+      "resolution": "Repository owner accepted the linked bounded result with its documented limitations on 2026-10-20; unknown runtime identity and non-enforced broader access remain evidence limitations."
+    },
+    {
+      "id": "BLK-004",
+      "priority": "P1",
+      "summary": "The next proof contract has not been selected or authorized by the owner.",
+      "evidence": [
+        "PROOF-002 is accepted with limitations; no subsequent workflow, pass/fail criteria, reviewer, or execution authority has been selected."
+      ],
+      "affectedGoals": [
+        "GOAL-USER",
+        "GOAL-ORGANIZATIONAL"
+      ],
+      "affectedJourneys": [
+        "JOURNEY-PRIMARY"
+      ],
+      "dependencies": [
+        "CAP-004",
+        "CAP-011"
+      ],
+      "resolutionCondition": "The owner selects and approves a bounded next proof contract, including workflow, evidence requirements, reviewer, and pass/fail conditions.",
       "status": "OPEN"
     }
   ],
@@ -327,20 +362,82 @@
       "status": "ACCEPTED_WITH_LIMITATIONS",
       "name": "Independent governed use of Constraint Compilation",
       "whyItMatters": "It is the smallest event that can distinguish a well-structured technique card from a technique that creates reproducible user value.",
-      "prerequisites": ["Name an authorized reviewer; the bounded searchable-documentation workflow is assigned", "Retain the sanitized trial and procedural deviations"],
-      "acceptanceCriteria": ["A practitioner who did not author the card follows the canonical workflow", "Every compiled constraint traces to supplied evidence", "The result preserves scope and authority boundaries", "A human reviewer accepts or rejects the output against the documented contract", "Failures and surprises are retained"],
-      "requiredEvidence": ["Experiment record", "Inputs or safe redactions", "Produced outcome contract", "Verification results", "Human review disposition"],
+      "prerequisites": [
+        "Name an authorized reviewer; the bounded searchable-documentation workflow is assigned",
+        "Retain the sanitized trial and procedural deviations"
+      ],
+      "acceptanceCriteria": [
+        "A practitioner who did not author the card follows the canonical workflow",
+        "Every compiled constraint traces to supplied evidence",
+        "The result preserves scope and authority boundaries",
+        "A human reviewer accepts or rejects the output against the documented contract",
+        "Failures and surprises are retained"
+      ],
+      "requiredEvidence": [
+        "Experiment record",
+        "Inputs or safe redactions",
+        "Produced outcome contract",
+        "Verification results",
+        "Human review disposition"
+      ],
       "currentBlockers": []
     },
     {
       "id": "PROOF-002",
-      "status": "NEXT",
+      "status": "ACCEPTED_WITH_LIMITATIONS",
       "name": "Independent repetition of Constraint Compilation",
       "whyItMatters": "PROOF-001 established one accepted-with-limitations bounded trial; repetition tests reproducibility rather than one-run plausibility.",
-      "prerequisites": ["Retain the PROOF-001 artifact and disposition", "Retain the validated EXP-20260924-001 protocol, result, and comparison", "Name an authorized reviewer", "Require an explicit ruling on the retained practitioner-independence and access-control limitations"],
-      "acceptanceCriteria": ["The second practitioner did not author the card", "Every compiled constraint traces to supplied evidence", "The result preserves scope and authority boundaries", "Results and failures are compared with PROOF-001", "An authorized human accepts or rejects the repetition"],
-      "requiredEvidence": ["Repetition record", "Inputs or safe redactions", "Produced outcome contract", "Comparison with PROOF-001", "Verification results", "Human review disposition"],
-      "currentBlockers": ["BLK-001"]
+      "prerequisites": [
+        "Retain the PROOF-001 artifact and disposition",
+        "Retain the validated EXP-20260924-001 protocol, result, and comparison",
+        "Name an authorized reviewer",
+        "Require an explicit ruling on the retained practitioner-independence and access-control limitations"
+      ],
+      "acceptanceCriteria": [
+        "The second practitioner did not author the card",
+        "Every compiled constraint traces to supplied evidence",
+        "The result preserves scope and authority boundaries",
+        "Results and failures are compared with PROOF-001",
+        "An authorized human accepts or rejects the repetition"
+      ],
+      "requiredEvidence": [
+        "Repetition record",
+        "Inputs or safe redactions",
+        "Produced outcome contract",
+        "Comparison with PROOF-001",
+        "Verification results",
+        "Human review disposition"
+      ],
+      "currentBlockers": [],
+      "humanDisposition": {
+        "authority": "Repository owner",
+        "recordedAt": "2026-10-20",
+        "verdict": "ACCEPTED_WITH_LIMITATIONS",
+        "evidence": "docs/project/evidence/EXP-20260924-001-human-disposition.md",
+        "scope": "Bounded artifact accepted with documented independence and access-control limitations; no technique promotion or proven reproducibility."
+      }
+    },
+    {
+      "id": "PROOF-003",
+      "status": "NEXT",
+      "selectionStatus": "NEEDS_OWNER_INPUT",
+      "name": "Owner selection of the next bounded proof contract",
+      "whyItMatters": "The accepted bounded results leave independence, real-world use, and observed value unverified; the owner must select which claim the next event will test.",
+      "prerequisites": [
+        "Retain the qualified PROOF-002 human disposition",
+        "Review unresolved evidence limits without promoting the technique"
+      ],
+      "acceptanceCriteria": [
+        "Owner selects the bounded workflow and claim to test",
+        "Owner specifies evidence, reviewer, pass/fail conditions, and stop conditions",
+        "Execution remains separately authorized"
+      ],
+      "requiredEvidence": [
+        "Explicit owner-selected next proof contract"
+      ],
+      "currentBlockers": [
+        "BLK-004"
+      ]
     }
   ],
   "commercialEvidence": [
@@ -348,8 +445,26 @@
     {"id": "COMMERCIAL-001", "kind": "commercial", "targetBuyer": "UNKNOWN", "buyingTrigger": "UNKNOWN", "offer": "UNKNOWN", "priceHypothesis": "UNKNOWN", "prospects": "UNKNOWN", "designPartners": "UNKNOWN", "paidCustomers": "UNKNOWN", "activation": "UNVERIFIED", "usage": "UNVERIFIED", "retention": "UNVERIFIED", "measuredOutcome": "UNVERIFIED", "revenueEvidence": "UNVERIFIED"}
   ],
   "nextActions": [
-    {"order": 1, "action": "Obtain authorized human acceptance or rejection of EXP-20260924-001, including an explicit ruling on the independence and access-control limitations.", "addresses": ["BLK-001"]},
-    {"order": 2, "action": "If accepted, reconcile BLK-001, PROOF-002, and reproducibility claims without automatic lifecycle promotion; if rejected, retain reasons and run a stricter repetition.", "addresses": ["BLK-001", "RISK-002"]},
-    {"order": 3, "action": "Verify the published revision and provider CI after explicit push authorization.", "addresses": []}
+    {
+      "order": 1,
+      "action": "Obtain owner selection of the next bounded proof contract; workflow, evidence, reviewer, and pass/fail criteria remain NEEDS_OWNER_INPUT.",
+      "addresses": [
+        "BLK-004"
+      ]
+    },
+    {
+      "order": 2,
+      "action": "Preserve runtime-identity and access-control limitations, unverified outcomes, and separate lifecycle-promotion authority.",
+      "addresses": [
+        "RISK-001",
+        "RISK-002",
+        "RISK-004"
+      ]
+    },
+    {
+      "order": 3,
+      "action": "Validate and publish the disposition reconciliation through a reviewed pull request.",
+      "addresses": []
+    }
   ]
 }

@@ -6,9 +6,10 @@ This manifest defines the isolated input packet for the proposed `PROOF-002` rep
 
 ## Retained reconstruction source (2026-10-20)
 
-The preparation status above is historical. The later execution and pending human
-disposition are recorded in the experiment and controller comparison; retaining
-this packet does not change either verdict.
+The preparation status above is historical. The later execution and qualified
+human disposition are recorded in the experiment, controller comparison, and
+[human disposition](EXP-20260924-001-human-disposition.md); packet integrity is
+separate from each verdict.
 
 The historical revision below is retained locally but cannot be fetched from
 GitHub. Its five product files, plus the unchanged practitioner brief, are now

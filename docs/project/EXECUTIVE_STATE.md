@@ -10,7 +10,7 @@ A practitioner or AI agent should be able to find and apply an appropriate techn
 
 ## Current Reality
 
-The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validators, automated intake tests, and GitHub Actions configuration. A preview-first, retention-gated experiment intake is locally tested. `PROOF-001` retains repository-owner acceptance with limitations. `PROOF-002` retains a materially consistent second contract and controller comparison but awaits human disposition of unverified runtime identity and non-enforced broader-filesystem isolation. The canonical-state control plane remains locally tested. There is no website/PWA, Codex skill adapter, general catalog CLI, MCP server, deployment configuration, observed user use, case study, or commercial evidence.
+The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validators, automated intake tests, and GitHub Actions configuration. A preview-first, retention-gated experiment intake is locally tested. `PROOF-001` retains repository-owner acceptance with limitations. `PROOF-002` retains a materially consistent second contract and controller comparison accepted by the owner with documented limitations on 2026-10-20. Runtime identity and technically enforced broader-filesystem isolation remain unverified. The canonical-state control plane remains locally tested. There is no website/PWA, Codex skill adapter, general catalog CLI, MCP server, deployment configuration, observed user use, case study, or commercial evidence.
 
 ## Capability State
 
@@ -26,15 +26,15 @@ The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validat
 ## What Is Not Proven
 
 - Constraint Compilation repeatability or user value.
-- Authorized acceptance of the `PROOF-002` repetition and its retained limitations.
+- Independent practitioner identity, runtime identity, and technically enforced isolation of the repetition.
 - Any evidence-level or capability promotion beyond the accepted bounded-trial minimum.
 - Current GitHub Actions execution for this revision.
-- Deployment, use, acceptance, adoption, retention, measured outcome, or revenue.
+- Deployment, real-world use, adoption, retention, measured outcome, or revenue.
 - A buyer, offer, price, design partner, paid customer, or commercial model.
 
 ## Primary Journey
 
-Finding and reading a technique is implemented through the catalogs and canonical card. One accepted application and one repetition awaiting disposition are retained; accepted repeatability, observed use, and outcome remain `UNVERIFIED`. The supporting authoring journey is structurally implemented, but no retained example proves the full review workflow.
+Finding and reading a technique is implemented through the catalogs and canonical card. Two bounded results have qualified owner acceptance; reproducibility, observed use, and outcome remain `UNVERIFIED`. The supporting authoring journey is structurally implemented, but no retained example proves the full review workflow.
 
 ## Critical Decisions
 
@@ -48,17 +48,19 @@ Finding and reading a technique is implemented through the catalogs and canonica
 
 ## Critical Blockers
 
-- `BLK-001` (P1): the retained repetition awaits disposition of its independence and access-control limitations.
+- `BLK-004` (P1): the owner has not selected the next proof contract, including workflow, evidence, reviewer, and pass/fail conditions.
+
+`BLK-001` is retained as closed by the qualified owner acceptance; its evidence limitations remain recorded.
 
 ## Next Proof Event
 
-`PROOF-002`: a second independent practitioner repeats Constraint Compilation under documented conditions, compares the result with `PROOF-001`, and receives an authorized human disposition.
+`PROOF-003`: owner selection of the next bounded proof contract. Status: `NEEDS_OWNER_INPUT`; no new experiment or execution has been selected or authorized.
 
 ## Next Actions
 
-1. Obtain authorized acceptance or rejection of `EXP-20260924-001`, including its retained limitations.
-2. Reconcile the blocker and proof event if accepted; retain reasons and run a stricter repetition if rejected.
-3. Verify the published revision and provider CI after explicit push authorization.
+1. Obtain owner selection of the next proof contract, including workflow, evidence, reviewer, and pass/fail and stop conditions.
+2. Preserve the qualified acceptances and remaining evidence limitations without automatic promotion.
+3. Validate and publish the disposition reconciliation through a reviewed pull request.
 
 ## Commercial / Operational Evidence
 

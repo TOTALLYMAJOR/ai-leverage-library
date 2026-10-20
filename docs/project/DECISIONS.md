@@ -128,6 +128,22 @@ Status: ACTIVE
 Revisit Trigger: Authorized users cannot capture legitimate experiments without raw source retention, or evidence shows the current guard fails to prevent sensitive or misleading records.
 ```
 
+## DEC-008 - Accept PROOF-002 within its documented limits
+
+```text
+Decision ID: DEC-008
+Date: 2026-10-20
+Context: The owner reviewed the linked controller comparison and replied "accept" after the input-packet retention and PR merge.
+Decision: Record ACCEPTED_WITH_LIMITATIONS for the bounded artifact and close BLK-001's missing-disposition condition. Retain unknown runtime/practitioner identity and non-enforced broader-filesystem isolation as limitations. Keep technique and capability lifecycle states unchanged.
+Authority: Repository owner acting as the authorized human reviewer
+Affected Components: PROOF-002, BLK-001, current project state, experiment record, proof register
+Evidence: docs/project/evidence/EXP-20260924-001-human-disposition.md; reviewed main 75d30dfb766bb8c94bd6265144d228b24c95ed37
+Reversible? A later owner decision may supersede this disposition while retaining the original record.
+Supersedes: Pending human disposition only; no source-evidence or lifecycle authority is replaced.
+Status: ACTIVE
+Revisit Trigger: New evidence contradicts the bounded result or a stronger reproducibility, promotion, or outcome claim is proposed.
+```
+
 ## Contradictions Requiring Authority
 
-The accepted-with-limitations `PROOF-001` trial satisfies the bounded-trial requirement for the seed card's existing `experimental` label. The card remains `experimental`/`concept`; accepted reproducibility and any promotion require the separate human disposition of `PROOF-002`. This ledger does not change the card or weaken the promotion policy.
+Both bounded results have owner acceptance with documented limitations. The seed card remains `experimental`/`concept`; neither acceptance supplies independent runtime/isolation proof, real-world outcomes, or a lifecycle-promotion decision. Stronger claims require claim-matched evidence and explicit review. The next proof contract remains `NEEDS_OWNER_INPUT`.

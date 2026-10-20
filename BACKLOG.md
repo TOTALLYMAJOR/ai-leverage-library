@@ -2,7 +2,7 @@
 
 This backlog records capabilities the AI Leverage Library could eventually develop beyond its current exploration set. It is an option inventory, not an active roadmap, implementation claim, or authorization to execute.
 
-The current explorations remain the searchable documentation/PWA, Codex skill, catalog CLI, MCP adapter, and distribution license questions in [`docs/project/EXPLORATIONS.md`](docs/project/EXPLORATIONS.md). The canonical next proof event is `PROOF-002`: authorized human disposition of the retained Constraint Compilation repetition, including its independence and access-control limitations.
+The current explorations remain the searchable documentation/PWA, Codex skill, catalog CLI, MCP adapter, and distribution license questions in [`docs/project/EXPLORATIONS.md`](docs/project/EXPLORATIONS.md). `PROOF-002` is accepted with documented limitations. The canonical next event, `PROOF-003`, is owner selection of the next bounded proof contract; its workflow and execution remain `NEEDS_OWNER_INPUT`.
 
 ## How a Horizon Item Becomes Work
 
@@ -272,7 +272,7 @@ PROOF-001 and retained trials
 
 - No horizon item is a current capability, active exploration, delivery promise, or funded initiative.
 - No item changes the technique lifecycle or promotes the seed technique.
-- No item displaces the canonical next proof event, `PROOF-002`, without an explicit canonical decision.
+- No item displaces owner selection of the next proof contract (`PROOF-003`) or selects a new experiment without an explicit owner decision.
 - No automated system may grant authority, acceptance, or lifecycle promotion.
 - No evidence feature may retain secrets, private customer data, credentials, or proprietary material by default.
 - No ecosystem or commercial capability should proceed while licensing and adopter evidence remain unresolved.

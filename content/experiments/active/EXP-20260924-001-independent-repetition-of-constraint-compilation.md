@@ -11,6 +11,7 @@ source_reference: "completion-goal-proof-002-sanitized"
 sensitivity: sanitized
 retention_authorized: true
 overlap_review: "AI-DISCOVER-001"
+human_disposition: accepted_with_limitations
 ---
 
 # Independent repetition of Constraint Compilation
@@ -21,7 +22,7 @@ A second practitioner who did not author the technique can independently produce
 
 ## Conditions
 
-Technical repetition completed; authorized human disposition pending.
+Technical repetition completed; the repository owner accepted the bounded result with its documented limitations on 2026-10-20. The [human disposition](../../../docs/project/evidence/EXP-20260924-001-human-disposition.md) records the decision. The execution conditions below remain historical.
 
 - Purpose: repeat `PROOF-001` without treating its accepted result as reproducibility evidence.
 - Frozen source revision: `f0756da78ad0b985b0ac4997f5856ad4168d5e64`, matching `PROOF-001`.
@@ -63,7 +64,7 @@ Execution verification established the following:
 - the result preserves scope and authority boundaries;
 - controller comparison classified the observed differences as compatible variations or elaborations and found no material contradiction;
 - the failure-scenario test detected mandatory offline-PWA behavior, invented framework choice, and local-evidence inflation; and
-- authorized human acceptance or rejection remains pending.
+- human acceptance was pending at execution time; the 2026-10-20 qualified acceptance is recorded separately.
 
 Practitioner non-authorship and prior-result blindness are only partially verified: the task used a fresh context and the practitioner reported compliance, but historical identity and broader-filesystem non-access were not independently proven.
 
@@ -76,7 +77,7 @@ Practitioner non-authorship and prior-result blindness are only partially verifi
 
 ## Decision
 
-Active and awaiting authorized human disposition. Keep `BLK-001` open and do not change technique status or evidence level automatically. The reviewer must decide whether the retained non-authorship and access-control limitations satisfy the proof contract or require a stricter rerun.
+The repository owner accepted the bounded repetition artifact with its documented non-authorship and access-control limitations on 2026-10-20. Close the missing-disposition condition in `BLK-001`; keep the experiment `active` for retained follow-up and preserve every limitation. Technique status and evidence level remain unchanged. Stronger reproducibility or independence claims require additional evidence and separate review.
 
 ## Human authority
 
