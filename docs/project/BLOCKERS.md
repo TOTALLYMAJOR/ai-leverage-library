@@ -11,6 +11,19 @@ Affected Goal: GOAL-USER; GOAL-ORGANIZATIONAL
 Affected Journey: JOURNEY-PRIMARY
 Dependencies: CAP-004; CAP-011; CAP-012
 Resolution Condition: An authorized human accepts or rejects PROOF-002 and explicitly decides whether the retained independence and access-control limitations satisfy the proof contract or require a stricter rerun.
+Status: CLOSED on 2026-10-20
+Resolution: Repository owner accepted the linked bounded result with its documented limitations. See evidence/EXP-20260924-001-human-disposition.md. Runtime identity and technically enforced broader-filesystem isolation remain unverified.
+```
+
+## BLK-004 - Next proof contract awaits owner selection
+
+```text
+Priority: P1
+Evidence: PROOF-002 is accepted with limitations; no subsequent workflow, evidence threshold, reviewer, or execution authority has been selected.
+Affected Goal: GOAL-USER; GOAL-ORGANIZATIONAL
+Affected Journey: JOURNEY-PRIMARY
+Dependencies: CAP-004; CAP-011
+Resolution Condition: Owner selects a bounded next proof contract, including workflow, evidence, reviewer, pass/fail conditions, and stop conditions. Execution requires separate authorization.
 Status: OPEN
 ```
 

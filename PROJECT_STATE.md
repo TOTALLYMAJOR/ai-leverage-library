@@ -11,9 +11,9 @@ Primary Purpose: A Git-native, evidence-aware library of reproducible AI techniq
 Primary User / Actor: Practitioners and AI agents seeking reproducible, authority-bounded AI workflows.
 Economic Buyer: UNKNOWN
 Problem Solved: Useful AI workflows are scattered across prompts, demonstrations, and tribal knowledge without reproducible verification or explicit human authority boundaries.
-Current Product Stage: 0.1.0 repository scaffold with one seed technique, tested experiment intake, one accepted-with-limitations trial, and one completed repetition awaiting human disposition; product use and organizational value are UNVERIFIED.
+Current Product Stage: 0.1.0 repository scaffold with one seed technique, tested experiment intake, and two accepted-with-limitations bounded results; product use and organizational value are UNVERIFIED.
 Primary Deployment Target: UNVERIFIED - a static documentation site or PWA is specified, but no provider or deployment configuration exists.
-Last Evidence Reconciliation: 2026-10-20 for current-state wording and frozen-packet retention; the historical PROOF-001 disposition and pending PROOF-002 disposition remain unchanged.
+Last Evidence Reconciliation: 2026-10-20 for owner acceptance of PROOF-002 with documented limitations, closure of its disposition blocker, and explicit owner selection of the next proof contract still pending.
 ```
 
 ## North-Star Goal
@@ -35,7 +35,8 @@ The exact six-file `PROOF-002` input packet is retained under
 inputs, not current project authorities. `npm run validate:proof-packet` checks
 them against the original SHA-256 manifest without requiring the unpublished
 historical Git commit. Packet integrity does not establish acceptance,
-practitioner independence, or reproducibility.
+practitioner independence, or reproducibility. The owner's qualified acceptance
+is recorded separately in the [human disposition](docs/project/evidence/EXP-20260924-001-human-disposition.md).
 
 ## Canonical Journey
 
@@ -51,7 +52,7 @@ A practitioner has an outcome or problem
 -> Useful outcome with explicit limits and authority
 ```
 
-The repository implements the card and catalog portion of this journey. One source-traced contract was accepted with limitations; a second materially consistent contract is retained but awaits human disposition of its independence and access-control limitations. Accepted repeatability, real use, and measured outcome remain `UNVERIFIED`.
+The repository implements the card and catalog portion of this journey. Both retained source-traced contracts have owner acceptance with documented limitations. Practitioner independence, enforced isolation, reproducibility, real use, and measured outcome remain `UNVERIFIED`.
 
 Supporting journey: a contributor searches for overlap, records an uncertain idea as an experiment, authors a card, updates the catalogs, runs validation, and obtains required review. This journey is documented and structurally implemented; a retained example completing the entire review workflow remains missing.
 
@@ -64,10 +65,10 @@ Acquisition journey: a contributor or AI agent previews a sanitized experiment r
 - The scoped backlog, intake, experiment, tests, and state changes passed `npm run validate` locally on 2026-09-24.
 - A preview-first experiment-intake command and lifecycle validator are implemented and locally `TESTED`. The command rejects raw prompt/source flags and requires explicit retention authorization before writing.
 - One sanitized active experiment operationalized `PROOF-001`. A fresh practitioner produced a retained contract and failure-scenario check; the repository owner accepted the artifact with its documented deviations on 2026-09-24.
-- `PROOF-002` produced a second source-traced contract and controller comparison. The result is materially consistent with `PROOF-001`, but runtime identity is unverified and broader filesystem non-access was practitioner-reported rather than technically enforced. Human disposition remains pending.
+- `PROOF-002` produced a second source-traced contract and controller comparison. The owner accepted the bounded artifact with its documented limitations on 2026-10-20. Runtime identity remains unverified and broader filesystem non-access was practitioner-reported rather than technically enforced.
 - A capability-horizon backlog now records speculative options beyond the current adapter and licensing explorations; none of its entries is implemented, prioritized, or promoted into canonical capability state.
 - No searchable website/PWA, Codex skill, general catalog CLI, or MCP implementation exists. These remain specified or planned adapters; the experiment-intake command is a narrower tested workflow.
-- One accepted-with-limitations result and one repetition awaiting disposition are retained. No case study, deployment receipt, observed user use, retention, measured outcome, paid customer, or revenue evidence exists in the repository.
+- Two accepted-with-limitations bounded results are retained. No case study, deployment receipt, observed user use, retention, measured outcome, paid customer, or revenue evidence is established by those artifacts.
 - Before this control-plane commit, available history contained two commits and one material branch, `main`; no additional worktree was registered.
 - The public source remains `UNLICENSED`; public visibility is not reuse permission.
 
@@ -84,31 +85,35 @@ Creating the horizon backlog changes planning visibility, not product capability
 
 ## Critical Blockers
 
-- `BLK-001` (P1): the retained repetition lacks authorized disposition and resolution of its independence and access-control limitations.
+- `BLK-004` (P1): the next proof contract awaits owner selection of its workflow, evidence, reviewer, and pass/fail conditions.
+
+`BLK-001` is retained as closed: the owner accepted the bounded `PROOF-002`
+result with its limitations. The unresolved runtime and access-control facts
+remain evidence limitations, not an outstanding acceptance request.
 
 ## NEXT PROOF EVENT
 
-**ID:** `PROOF-002`
+**ID:** `PROOF-003`
 
-**Proof Event:** A second independent practitioner repeats Constraint Compilation on a bounded workflow under the documented conditions, with an authorized human reviewing the result.
+**Proof Event:** Owner selection of the next bounded proof contract. Selection status: `NEEDS_OWNER_INPUT`; no next experiment has been chosen or authorized.
 
-**Why It Matters:** `PROOF-001` established one accepted-with-limitations bounded trial. Repetition is the smallest next event that can test reproducibility rather than one-run plausibility.
+**Why It Matters:** Two qualified artifact acceptances leave independence, real-world use, and measured value unverified. The owner must select which claim and workflow the next event will test.
 
-**Prerequisites:** Retain the `PROOF-001` artifact and disposition; retain the validated `EXP-20260924-001` protocol, result, and comparison; name an authorized reviewer; require an explicit ruling on the retained practitioner-independence and access-control limitations.
+**Prerequisites:** Retain both artifacts and their qualified human dispositions; review the unresolved evidence limits without promoting the technique.
 
-**Acceptance Criteria:** The second practitioner did not author the card; every compiled constraint traces to supplied evidence; authority and scope boundaries are preserved; results and failures are compared with `PROOF-001`; an authorized human accepts or rejects the repetition.
+**Acceptance Criteria:** The owner selects a bounded workflow and claim, names its evidence and reviewer, and sets pass/fail and stop conditions. Execution requires separate authorization.
 
-**Required Evidence:** Repetition record, safe inputs or redactions, produced outcome contract, comparison with `PROOF-001`, verification results, and human disposition.
+**Required Evidence:** An explicit owner-selected next proof contract.
 
-**Current Blockers:** `BLK-001`.
+**Current Blockers:** `BLK-004`.
 
 Engineering work is derived backward from this event. Building an adapter does not replace the proof event.
 
 ## Next Actions
 
-1. Obtain authorized human acceptance or rejection of `EXP-20260924-001`, explicitly ruling on its independence and access-control limitations.
-2. If accepted, reconcile `BLK-001`, `PROOF-002`, and reproducibility claims without automatic lifecycle promotion; if rejected, retain reasons and run a stricter repetition.
-3. Verify the published revision and provider CI after explicit push authorization.
+1. Obtain owner selection of the next bounded proof contract; the workflow, evidence, reviewer, and pass/fail conditions remain `NEEDS_OWNER_INPUT`.
+2. Preserve the runtime-identity and access-control limitations, unverified outcomes, and separate promotion authority.
+3. Validate and publish this disposition reconciliation through a reviewed pull request.
 
 ## Reconciliation Rule
 

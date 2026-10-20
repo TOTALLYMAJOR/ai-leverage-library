@@ -77,4 +77,4 @@ Status meanings:
 
 ## Current state
 
-Version 0.1.0 establishes the repository contract, templates, validation, CI configuration, one seed technique, and a tested experiment-intake path. One bounded trial was accepted with limitations; a second, materially consistent repetition awaits authorized human disposition. Accepted repeatability, field validation, observed user value, and deployment remain unverified. See [the executive state report](docs/project/EXECUTIVE_STATE.md) for the current evidence reconciliation.
+Version 0.1.0 establishes the repository contract, templates, validation, CI configuration, one seed technique, and a tested experiment-intake path. Both retained bounded results have repository-owner acceptance with documented limitations. Practitioner independence, enforced isolation, reproducibility, field validation, observed user value, and deployment remain unverified. The next proof contract awaits owner selection. See [the executive state report](docs/project/EXECUTIVE_STATE.md) and [PROOF-002 disposition](docs/project/evidence/EXP-20260924-001-human-disposition.md).

@@ -1,10 +1,10 @@
 # EXP-20260924-001 Controller Comparison
 
-Status: `AWAITING_HUMAN_DISPOSITION`
+Status: `ACCEPTED_WITH_LIMITATIONS`
 
-This comparison evaluates the second practitioner contract against `docs/project/evidence/EXP-20260915-001-outcome-contract.md`. It does not supply the required human acceptance or rejection.
+This comparison evaluates the second practitioner contract against `docs/project/evidence/EXP-20260915-001-outcome-contract.md`. Its execution checks and controller verdict below retain the pre-disposition record. The repository owner's 2026-10-20 acceptance, including the retained limitations, is recorded in [the human disposition](EXP-20260924-001-human-disposition.md).
 
-## Execution checks
+## Execution checks (historical, before human disposition)
 
 | Check | Evidence | Controller result |
 | --- | --- | --- |
@@ -17,7 +17,7 @@ This comparison evaluates the second practitioner contract against `docs/project
 | Failure behavior | Contract rejects mandatory offline-PWA behavior, invented framework choice, deployment claims, and local-evidence inflation | `PASS` |
 | Human disposition | No authorized human acceptance or rejection has been supplied for this repetition | `PENDING` |
 
-## Comparison with PROOF-001
+## Comparison with PROOF-001 (historical, before human disposition)
 
 | Comparison area | PROOF-001 | PROOF-002 practitioner result | Classification |
 | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ This comparison evaluates the second practitioner contract against `docs/project
 | Failure scenario | Rejected mandatory offline PWA | Independently selected and rejected the same preference-to-authority failure pattern | Consistent signal |
 | Constraint granularity | Ten compiled constraints | Twenty finer-grained constraints | Compatible elaboration |
 | Empty/no-result behavior | Stop on missing authority or evidence | Adds an explicit empty or `UNVERIFIED` state | Compatible derived behavior, not implementation authority |
-| Current proof-event wording | Frozen packet identified `PROOF-001` as next | Repetition correctly reports the frozen packet's `PROOF-001` state | Expected frozen-baseline result; current repository state remains `PROOF-002` |
+| Proof-event wording at execution time | Frozen packet identified `PROOF-001` as next | Repetition correctly reports the frozen packet's `PROOF-001` state | Expected frozen-baseline result; repository state at execution time remained `PROOF-002` |
 
 ## Contradictions and unsupported additions
 
@@ -39,7 +39,7 @@ This comparison evaluates the second practitioner contract against `docs/project
 - The explicit no-result state is a derived adapter behavior supported by the technique's false-completeness boundary and the horizon router's abstention concept. It remains a proposed contract term, not an implemented capability.
 - Practitioner independence and source isolation are not proven strongly enough for automatic blocker removal because runtime identity is unavailable and broader filesystem read access was not technically denied.
 
-## Controller verdict
+## Controller verdict (historical, before human disposition)
 
 The repetition produced a complete, source-traced contract whose core constraints are materially consistent with `PROOF-001` and whose differences are compatible elaborations rather than contradictions. The result is suitable for authorized human review.
 
