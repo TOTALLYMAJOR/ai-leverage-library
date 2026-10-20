@@ -120,11 +120,25 @@
       "lifecycle_state": "IMPLEMENTED",
       "confidence": "HIGH",
       "evidence": [
-        {"type": "source", "path": ".github/workflows/validate.yml", "detail": "Workflow configuration exists"}
+        {
+          "type": "source",
+          "path": ".github/workflows/validate.yml",
+          "detail": "Workflow configuration exists"
+        },
+        {
+          "type": "test-result",
+          "path": "docs/project/evidence/CI-20261020-pr3-main-validation.md",
+          "command": "npm run validate (GitHub Actions)",
+          "outcome": "PASS",
+          "observed_at": "2026-10-20",
+          "detail": "Successful PR #3 run 39514826108 and merged-main run 39515288921; exact GitHub head SHAs and limits retained in receipt. No lifecycle promotion."
+        }
       ],
-      "dependencies": ["CAP-002"],
+      "dependencies": [
+        "CAP-002"
+      ],
       "blockers": [],
-      "last_verified": "2026-08-25",
+      "last_verified": "2026-10-20",
       "owner_or_authority": "GitHub Actions provider acknowledgement is required for operational proof",
       "is_current": true
     },
@@ -300,7 +314,16 @@
   "integrations": [
     {"id": "INT-001", "name": "Git", "state": "IMPLEMENTED", "evidence": ["Repository metadata identifies main as the active branch"]},
     {"id": "INT-002", "name": "GitHub remote", "state": "IMPLEMENTED", "evidence": ["origin URL is https://github.com/TOTALLYMAJOR/ai-leverage-library.git"]},
-    {"id": "INT-003", "name": "GitHub Actions", "state": "IMPLEMENTED", "evidence": [".github/workflows/validate.yml"], "operationalEvidence": "UNVERIFIED in this reconciliation"},
+    {
+      "id": "INT-003",
+      "name": "GitHub Actions",
+      "state": "IMPLEMENTED",
+      "evidence": [
+        ".github/workflows/validate.yml",
+        "docs/project/evidence/CI-20261020-pr3-main-validation.md"
+      ],
+      "operationalEvidence": "VERIFIED for PR #3 head 400dfa9e99a8bd9f14c709aeba7cdfa2e02b5ee6 (run 39514826108) and merged-main 9a9f8ddf7b6ed2c46e8f911a7348f351d3ca5f0f (run 39515288921), both success on 2026-10-20; later revisions require their own receipts."
+    },
     {"id": "INT-004", "name": "Node.js", "state": "IMPLEMENTED", "evidence": ["package.json requires Node >=20 and validation scripts use node:fs and node:path"]}
   ],
   "risks": [
@@ -460,11 +483,6 @@
         "RISK-002",
         "RISK-004"
       ]
-    },
-    {
-      "order": 3,
-      "action": "Validate and publish the disposition reconciliation through a reviewed pull request.",
-      "addresses": []
     }
   ]
 }
