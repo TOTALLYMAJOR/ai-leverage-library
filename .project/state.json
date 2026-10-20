@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/project-state.schema.json",
   "schemaVersion": 1,
-  "reconciledAt": "2026-09-24",
+  "reconciledAt": "2026-10-20",
   "validationPolicy": {
     "maxVerificationAgeDays": 90
   },
@@ -231,9 +231,11 @@
       "evidence": [
         {"type": "source", "path": "scripts/create-experiment.mjs", "detail": "Preview-first experiment intake command"},
         {"type": "source", "path": "scripts/validate-experiments.mjs", "detail": "Experiment lifecycle and structure validator"},
+        {"type": "source", "path": "scripts/verify-proof-packet.mjs", "detail": "Verify the retained six-file frozen packet against its original SHA-256 manifest without unpublished Git history; no acceptance or reproducibility verdict"},
         {"type": "source", "path": "schema/experiment.schema.json", "detail": "Machine-readable experiment metadata contract"},
         {"type": "test-result", "path": "tests/experiment-intake.test.mjs", "command": "npm run test:intake", "outcome": "PASS", "observed_at": "2026-09-24", "detail": "Eleven local tests covered preview, retention authorization, collision-safe writes, unsafe input and candidate-ID rejection, lifecycle directories and metadata, placeholders, required sections, and duplicate IDs"},
-        {"type": "test-result", "path": "scripts/validate-experiments.mjs", "command": "npm run validate:experiments", "outcome": "PASS", "observed_at": "2026-09-24", "detail": "The active PROOF-001 experiment record passed structural validation"}
+        {"type": "test-result", "path": "scripts/validate-experiments.mjs", "command": "npm run validate:experiments", "outcome": "PASS", "observed_at": "2026-09-24", "detail": "The active PROOF-001 experiment record passed structural validation"},
+        {"type": "test-result", "path": "tests/verify-proof-packet.test.mjs", "command": "npm run test:proof-packet", "outcome": "PASS", "observed_at": "2026-10-20", "detail": "Seven local tests verify a complete packet without Git history and reject changed, missing, extra, symlinked, duplicate, or escaping inputs"}
       ],
       "dependencies": ["CAP-003", "CAP-011"],
       "blockers": [],
@@ -301,7 +303,7 @@
     {"id": "INT-004", "name": "Node.js", "state": "IMPLEMENTED", "evidence": ["package.json requires Node >=20 and validation scripts use node:fs and node:path"]}
   ],
   "risks": [
-    {"id": "RISK-001", "severity": "HIGH", "summary": "Technique value may remain a one-run documentation claim without independent repetition and observed outcomes.", "evidence": ["One accepted-with-limitations practitioner result is retained, but it has no repetition, case study, or observed outcome"]},
+    {"id": "RISK-001", "severity": "HIGH", "summary": "Technique value remains unverified without accepted independent repetition and observed outcomes.", "evidence": ["One accepted-with-limitations practitioner result and a repetition awaiting authorized human disposition are retained; no case study or observed outcome is established"]},
     {"id": "RISK-002", "severity": "MEDIUM", "summary": "The seed card's evidence level may be mistaken for accepted reproducibility before human disposition of the second result.", "evidence": ["content/techniques/discover/constraint-compilation.md remains experimental and concept; PROOF-002 retains unresolved independence and access-control limitations"]},
     {"id": "RISK-003", "severity": "MEDIUM", "summary": "Public visibility may be mistaken for permission to reuse despite the all-rights-reserved license.", "evidence": ["LICENSE", "package.json"]},
     {"id": "RISK-004", "severity": "MEDIUM", "summary": "Two practitioner artifacts may be mistaken for an accepted reproducible or observed user outcome.", "evidence": ["The repetition awaits authorized disposition, and neither experiment proves observed use or measured outcome"]}

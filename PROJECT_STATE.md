@@ -13,7 +13,7 @@ Economic Buyer: UNKNOWN
 Problem Solved: Useful AI workflows are scattered across prompts, demonstrations, and tribal knowledge without reproducible verification or explicit human authority boundaries.
 Current Product Stage: 0.1.0 repository scaffold with one seed technique, tested experiment intake, one accepted-with-limitations trial, and one completed repetition awaiting human disposition; product use and organizational value are UNVERIFIED.
 Primary Deployment Target: UNVERIFIED - a static documentation site or PWA is specified, but no provider or deployment configuration exists.
-Last Evidence Reconciliation: 2026-09-24 with PROOF-001 human disposition, PROOF-002 pending disposition, and local validation.
+Last Evidence Reconciliation: 2026-10-20 for current-state wording and frozen-packet retention; the historical PROOF-001 disposition and pending PROOF-002 disposition remain unchanged.
 ```
 
 ## North-Star Goal
@@ -29,6 +29,13 @@ Technical success means the repository keeps portable technique definitions, evi
 - [`BACKLOG.md`](BACKLOG.md) is a non-authoritative horizon inventory. Its entries are neither current capabilities nor active explorations, roadmap commitments, or execution authority.
 - Source proves implementation, local commands prove only the environment and revision they ran against, provider receipts prove provider acknowledgement, and human or user evidence proves acceptance or use. None substitutes for another.
 - Missing evidence is `UNVERIFIED`, not a pass or a failure.
+
+The exact six-file `PROOF-002` input packet is retained under
+`docs/project/evidence/packets/EXP-20260924-001/`. Its files are immutable historical
+inputs, not current project authorities. `npm run validate:proof-packet` checks
+them against the original SHA-256 manifest without requiring the unpublished
+historical Git commit. Packet integrity does not establish acceptance,
+practitioner independence, or reproducibility.
 
 ## Canonical Journey
 

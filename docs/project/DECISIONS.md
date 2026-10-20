@@ -130,4 +130,4 @@ Revisit Trigger: Authorized users cannot capture legitimate experiments without 
 
 ## Contradictions Requiring Authority
 
-The `experimental` label on the seed card conflicts with the promotion evidence described in `CONTRIBUTING.md`. This ledger does not silently convert either the card or the policy. A human reviewer must reconcile the status after evidence is produced or explicitly correct the historical label.
+The accepted-with-limitations `PROOF-001` trial satisfies the bounded-trial requirement for the seed card's existing `experimental` label. The card remains `experimental`/`concept`; accepted reproducibility and any promotion require the separate human disposition of `PROOF-002`. This ledger does not change the card or weaken the promotion policy.

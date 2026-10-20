@@ -4,6 +4,18 @@ Status: `PREPARED_NOT_EXECUTED`
 
 This manifest defines the isolated input packet for the proposed `PROOF-002` repetition. It proves packet identity only. It does not prove practitioner independence, isolation during execution, a completed run, acceptance, or reproducibility.
 
+## Retained reconstruction source (2026-10-20)
+
+The preparation status above is historical. The later execution and pending human
+disposition are recorded in the experiment and controller comparison; retaining
+this packet does not change either verdict.
+
+The historical revision below is retained locally but cannot be fetched from
+GitHub. Its five product files, plus the unchanged practitioner brief, are now
+retained byte-for-byte under `packets/EXP-20260924-001/` beside this manifest.
+All six hashes below remain unchanged. These files are frozen evidence, not
+current project authorities. Do not update their content to reflect later state.
+
 ## Frozen product sources
 
 Revision: `f0756da78ad0b985b0ac4997f5856ad4168d5e64`
@@ -28,7 +40,21 @@ The practitioner brief constrains execution but is not product evidence and must
 
 ## Reconstruction
 
-Create a new empty directory, extract only the five named product sources from the frozen revision, and copy the practitioner brief into that directory. Before handing off the packet:
+From a fresh checkout of this PR or a later revision containing the retained
+packet, run:
+
+```sh
+npm run validate:proof-packet
+```
+
+This command verifies the six retained files against the original hashes and
+rejects missing, changed, extra, or symlinked files. It does not require Git
+history, a network request, or access to the original local repository.
+
+Create a new empty directory and copy only the six files from
+`docs/project/evidence/packets/EXP-20260924-001/`, preserving their relative paths.
+The original Git revision remains historical provenance; use the retained packet
+for reconstruction. Before handing off the packet:
 
 1. confirm the directory contains exactly six regular files;
 2. recalculate every SHA-256 value and compare it with this manifest;

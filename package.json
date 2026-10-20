@@ -7,9 +7,11 @@
   "scripts": {
     "experiment:new": "node scripts/create-experiment.mjs",
     "test:intake": "node --test tests/experiment-intake.test.mjs tests/validate-experiments.test.mjs",
-    "validate": "npm run validate:project-state && npm run test:intake && npm run validate:experiments && npm run validate:techniques",
+    "validate": "npm run validate:project-state && npm run test:intake && npm run test:proof-packet && npm run validate:experiments && npm run validate:proof-packet && npm run validate:techniques",
     "validate:experiments": "node scripts/validate-experiments.mjs",
     "validate:project-state": "node scripts/validate-project-state.mjs",
+    "test:proof-packet": "node --test tests/verify-proof-packet.test.mjs",
+    "validate:proof-packet": "node scripts/verify-proof-packet.mjs",
     "validate:techniques": "node scripts/validate.mjs",
     "test": "npm run validate",
     "build": "npm run validate"
