@@ -44,10 +44,13 @@ CATALOG.md           Human-readable entry point
 ## Start here
 
 1. Browse [CATALOG.md](CATALOG.md).
-2. Copy [templates/technique-card.md](templates/technique-card.md).
-3. Add the card to the matching `content/techniques/<category>/` directory.
-4. Update `catalog.yaml` to match the canonical card.
-5. Run `npm run validate`.
+2. Preview a safe experiment intake with `npm run experiment:new -- --title "..." --hypothesis "..." --source-kind user-request --source-reference "sanitized-reference"`.
+3. Add `--write --retention-authorized` only after confirming the source reference and generated record contain no secrets, private customer data, credentials, or proprietary material.
+4. Run the bounded trial and retain failures plus human disposition before promoting a technique.
+5. Copy [templates/technique-card.md](templates/technique-card.md) only when the evidence supports a reusable technique.
+6. Add the card to the matching `content/techniques/<category>/` directory, update `catalog.yaml`, and run `npm run validate`.
+
+The intake command previews by default, reports overlap with a named catalog technique, rejects raw prompt/source flags, and writes only proposed experiment records. It does not execute an experiment or change technique status.
 
 For project-wide capability, evidence, decision, blocker, and next-proof state, start with [PROJECT_STATE.md](PROJECT_STATE.md). Its machine-readable counterpart is [`.project/state.json`](.project/state.json), and `npm run validate:project-state` checks obvious drift without inferring semantic truth.
 
@@ -74,4 +77,4 @@ Status meanings:
 
 ## Current state
 
-Version 0.1.0 establishes the repository contract, templates, validation, CI configuration, and one seed technique. It does not yet claim a complete, operationally verified, or field-validated library. See [the executive state report](docs/project/EXECUTIVE_STATE.md) for the current evidence reconciliation.
+Version 0.1.0 establishes the repository contract, templates, validation, CI configuration, one seed technique, and a tested experiment-intake path. One bounded trial was accepted with limitations; a second, materially consistent repetition awaits authorized human disposition. Accepted repeatability, field validation, observed user value, and deployment remain unverified. See [the executive state report](docs/project/EXECUTIVE_STATE.md) for the current evidence reconciliation.

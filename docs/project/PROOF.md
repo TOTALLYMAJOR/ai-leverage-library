@@ -5,13 +5,15 @@ Verdicts describe evidence available in this reconciliation, not likelihood.
 | Claim | Required Evidence | Current Evidence | Verdict |
 | --- | --- | --- | --- |
 | The repository defines a portable technique-card contract. | Canonical location, template, schema, example, and governance authority | `AGENTS.md`, `templates/technique-card.md`, `schema/technique.schema.json`, and the seed card exist | `PROVEN` as repository structure only |
-| Technique metadata and catalog agreement are validated locally. | Validator source plus an exact-snapshot passing check | `scripts/validate.mjs` exists and the exact committed snapshot passed `npm run validate` on 2026-08-25 | `PROVEN` locally; CI remains `UNVERIFIED` |
-| The canonical project state detects obvious drift. | Ledger, schema, validator, and passing targeted execution | `.project/state.json`, its schema, and `npm run validate:project-state` passing locally on 2026-08-25 | `PROVEN` locally; CI remains `UNVERIFIED` |
-| Constraint Compilation is reproducible under documented conditions. | At least one retained bounded trial, followed by repetition under documented conditions and claim-matched verification | Technique card only; `evidence_level: concept`; no experiment record | `UNVERIFIED` |
-| The seed technique satisfies the repository's `experimental` promotion requirement. | At least one bounded trial with recorded conditions | Card says `experimental`; no trial is retained | `CONTRADICTED` by available repository evidence |
+| Technique metadata and catalog agreement are validated locally. | Validator source plus a passing local check | `scripts/validate.mjs` exists and `npm run validate` passed locally on 2026-09-24 | `PROVEN` locally; CI remains `UNVERIFIED` |
+| The canonical project state detects obvious drift. | Ledger, schema, validator, and passing targeted execution | `.project/state.json`, its schema, and `npm run validate:project-state` passing locally on 2026-09-24 | `PROVEN` locally; CI remains `UNVERIFIED` |
+| Experiment candidates can be captured as governed proposed records. | Preview-first intake, explicit retention authorization, safe source references, overlap review, lifecycle validation, and passing tests | Intake command, schema, validator, automated tests, and two structurally valid active experiment records | `PROVEN` locally as intake structure only; independent contributor use is `UNVERIFIED` |
+| Constraint Compilation is reproducible under documented conditions. | At least one retained, human-reviewed bounded trial, followed by repetition under documented conditions and claim-matched verification | One result is accepted with limitations; a materially consistent repetition and comparison are retained, but human disposition and acceptance of independence/access limitations are pending | `UNVERIFIED` pending authorized disposition |
+| The original six-file repetition input packet can be checked without unpublished Git history. | Retained original files, original manifest hashes, verifier, and negative-case tests | `docs/project/evidence/packets/EXP-20260924-001/`, the source manifest, and `npm run validate:proof-packet`; all six hashes and seven local tests passed on 2026-10-20 | `PROVEN` locally as packet byte identity only; practitioner independence, acceptance, and reproducibility remain `UNVERIFIED` |
+| The seed technique satisfies the repository's `experimental` bounded-trial requirement. | At least one bounded trial with recorded conditions and required human review | One active trial retains an owner-accepted-with-limitations practitioner result and its procedural deviations | `PROVEN` for the bounded-trial requirement only; no automatic promotion or evidence-level change |
 | Pull requests and main pushes are validated by GitHub Actions. | Provider run for the exact revision with a successful conclusion | Workflow configuration exists; no provider receipt was inspected in this reconciliation | `UNVERIFIED` operationally |
 | Users can search the library through a website or PWA. | Implemented search/UI, tests, deployed route, and user evidence | README roadmap only; no application source or deployment configuration exists | `CONTRADICTED` if stated as current capability |
-| The library has produced accepted user or organizational outcomes. | Retained usage, human disposition, and measured outcome evidence | No experiment, case study, usage record, or acceptance evidence | `UNVERIFIED` |
+| The library has produced accepted user or organizational outcomes. | Retained usage, human disposition, and measured outcome evidence | One artifact is accepted with limitations, but no observed use, case study, measured outcome, or organizational result exists | `UNVERIFIED` |
 | The library is commercially validated. | Target buyer, offer, activation, usage, retention, measured value, and transaction evidence | Economic buyer, offer, customers, usage, and revenue are `UNKNOWN` or `UNVERIFIED` | `UNVERIFIED` |
 
 ## Evidence Boundaries
@@ -21,7 +23,7 @@ Verdicts describe evidence available in this reconciliation, not likelihood.
 - A workflow file cannot prove a provider executed it.
 - A deployment configuration cannot prove a deployment exists.
 - A generated result cannot prove human acceptance.
-- One accepted result cannot prove repeatability, retention, or commercial value.
+- Two generated results cannot prove accepted repeatability, observed use, retention, or commercial value without the required human and outcome evidence.
 - External claims require provider, user, organizational, or transaction evidence as applicable.
 
 ## Promotion Rule

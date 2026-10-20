@@ -2,27 +2,15 @@
 
 Only conditions that prevent the next meaningful outcome belong here. Broader ideas remain in `EXPLORATIONS.md`.
 
-## BLK-001 - No retained proof of the primary outcome
+## BLK-001 - Repetition awaiting disposition
 
 ```text
 Priority: P1
-Evidence: No experiment record or case study exists; the seed card records evidence_level: concept.
+Evidence: `EXP-20260924-001` produced a materially consistent source-traced result, but runtime identity is unverified and broader filesystem non-access was practitioner-reported rather than technically enforced.
 Affected Goal: GOAL-USER; GOAL-ORGANIZATIONAL
 Affected Journey: JOURNEY-PRIMARY
-Dependencies: CAP-004; CAP-011
-Resolution Condition: Complete PROOF-001 with retained inputs, output, verification, failures, and human disposition.
-Status: OPEN
-```
-
-## BLK-003 - No outcome reviewer or adopter is recorded
-
-```text
-Priority: P2
-Evidence: Governance requires human review, but no reviewer, design partner, or adopting organization is named in repository evidence.
-Affected Goal: GOAL-USER; GOAL-ORGANIZATIONAL
-Affected Journey: JOURNEY-PRIMARY
-Dependencies: None
-Resolution Condition: Record an authorized reviewer and a bounded target workflow for PROOF-001.
+Dependencies: CAP-004; CAP-011; CAP-012
+Resolution Condition: An authorized human accepts or rejects PROOF-002 and explicitly decides whether the retained independence and access-control limitations satisfy the proof contract or require a stricter rerun.
 Status: OPEN
 ```
 

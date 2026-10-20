@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ai-leverage/experiment.schema.json",
+  "title": "AI Leverage Experiment Record",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "status",
+    "candidate_technique",
+    "owner",
+    "started",
+    "source_kind",
+    "source_reference",
+    "sensitivity",
+    "retention_authorized",
+    "overlap_review"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^EXP-[0-9]{8}-[0-9]{3}$" },
+    "title": { "type": "string", "minLength": 3 },
+    "status": { "enum": ["proposed", "active", "rejected"] },
+    "candidate_technique": {
+      "type": "string",
+      "pattern": "^(?:unassigned|AI-[A-Z]+-[0-9]{3})$"
+    },
+    "owner": { "type": "string", "minLength": 3 },
+    "started": { "type": "string", "format": "date" },
+    "completed": { "type": "string" },
+    "source_kind": {
+      "enum": [
+        "user-request",
+        "observed-workflow",
+        "correction",
+        "failure",
+        "external-reference",
+        "research"
+      ]
+    },
+    "source_reference": { "type": "string", "minLength": 3 },
+    "sensitivity": { "enum": ["public", "sanitized"] },
+    "retention_authorized": { "const": true },
+    "overlap_review": { "type": "string", "minLength": 3 }
+  },
+  "additionalProperties": true
+}

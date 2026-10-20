@@ -6,6 +6,11 @@ candidate_technique: AI-CATEGORY-000
 owner: unassigned
 started: YYYY-MM-DD
 completed:
+source_kind: user-request
+source_reference: sanitized-reference-only
+sensitivity: sanitized
+retention_authorized: false
+overlap_review: none-found
 ---
 
 # Experiment title
@@ -37,3 +42,7 @@ Preserve negative evidence.
 ## Decision
 
 Promote, revise, repeat, or reject - and why.
+
+## Human authority
+
+State who may authorize retained source material, execution, acceptance, and any technique lifecycle change.

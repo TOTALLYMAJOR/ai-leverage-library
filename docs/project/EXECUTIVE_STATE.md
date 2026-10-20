@@ -10,7 +10,7 @@ A practitioner or AI agent should be able to find and apply an appropriate techn
 
 ## Current Reality
 
-The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, a Node validator, and GitHub Actions configuration. The canonical-state control plane and its targeted drift check are locally tested. There is no website/PWA, Codex skill, catalog CLI, MCP server, deployment configuration, retained user trial, case study, or commercial evidence.
+The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, validators, automated intake tests, and GitHub Actions configuration. A preview-first, retention-gated experiment intake is locally tested. `PROOF-001` retains repository-owner acceptance with limitations. `PROOF-002` retains a materially consistent second contract and controller comparison but awaits human disposition of unverified runtime identity and non-enforced broader-filesystem isolation. The canonical-state control plane remains locally tested. There is no website/PWA, Codex skill adapter, general catalog CLI, MCP server, deployment configuration, observed user use, case study, or commercial evidence.
 
 ## Capability State
 
@@ -19,21 +19,22 @@ The 0.1.0 scaffold has one seed technique, templates, schemas, catalogs, a Node 
 | `IDEA` | 1 | MCP adapter |
 | `SPECIFIED` | 4 | Constraint Compilation; website/PWA; Codex skill; CLI |
 | `IMPLEMENTED` | 4 | Canonical cards; catalogs; CI configuration; evidence-retention scaffolds |
-| `TESTED` | 2 | Technique validation; canonical state and drift detection |
+| `TESTED` | 3 | Technique validation; canonical state and drift detection; governed experiment intake and validation |
 | `BLOCKED` | 0 | None |
 | `VERIFIED` or higher | 0 | None |
 
 ## What Is Not Proven
 
 - Constraint Compilation repeatability or user value.
-- Compliance of the seed's `experimental` label with the documented trial requirement.
+- Authorized acceptance of the `PROOF-002` repetition and its retained limitations.
+- Any evidence-level or capability promotion beyond the accepted bounded-trial minimum.
 - Current GitHub Actions execution for this revision.
 - Deployment, use, acceptance, adoption, retention, measured outcome, or revenue.
 - A buyer, offer, price, design partner, paid customer, or commercial model.
 
 ## Primary Journey
 
-Finding and reading a technique is implemented through the catalogs and canonical card. Applying it, retaining verification, obtaining human acceptance, and observing an outcome are `UNVERIFIED`. The supporting authoring journey is structurally implemented, but no retained example proves the full review workflow.
+Finding and reading a technique is implemented through the catalogs and canonical card. One accepted application and one repetition awaiting disposition are retained; accepted repeatability, observed use, and outcome remain `UNVERIFIED`. The supporting authoring journey is structurally implemented, but no retained example proves the full review workflow.
 
 ## Critical Decisions
 
@@ -42,21 +43,22 @@ Finding and reading a technique is implemented through the catalogs and canonica
 - Evidence and human authority gates constrain promotion.
 - Delivery surfaces remain adapters over the portable content core.
 - Public visibility grants no reuse license.
+- Capability horizons remain options until explicitly promoted into exploration and canonical state.
+- Experiment acquisition previews by default and requires explicit retention authority before writing.
 
 ## Critical Blockers
 
-- `BLK-001` (P1): no retained bounded trial or independent user outcome.
-- `BLK-003` (P2): no reviewer, design partner, or adopting organization is recorded.
+- `BLK-001` (P1): the retained repetition awaits disposition of its independence and access-control limitations.
 
 ## Next Proof Event
 
-`PROOF-001`: an independent practitioner applies the canonical Constraint Compilation card to a bounded real workflow, retains the result and verification, and receives an authorized human disposition.
+`PROOF-002`: a second independent practitioner repeats Constraint Compilation under documented conditions, compares the result with `PROOF-001`, and receives an authorized human disposition.
 
 ## Next Actions
 
-1. Name the practitioner, workflow, and reviewer for `PROOF-001`.
-2. Run and retain the bounded trial, including negative evidence.
-3. Reassess the technique status and adapter roadmap from that evidence.
+1. Obtain authorized acceptance or rejection of `EXP-20260924-001`, including its retained limitations.
+2. Reconcile the blocker and proof event if accepted; retain reasons and run a stricter repetition if rejected.
+3. Verify the published revision and provider CI after explicit push authorization.
 
 ## Commercial / Operational Evidence
 
