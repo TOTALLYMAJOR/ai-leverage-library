@@ -144,6 +144,22 @@ Status: ACTIVE
 Revisit Trigger: New evidence contradicts the bounded result or a stronger reproducibility, promotion, or outcome claim is proposed.
 ```
 
+## DEC-009 - Approve the real-PR trial method; retain pending target and execution
+
+```text
+Decision ID: DEC-009
+Date: 2026-10-20
+Context: The owner asked for a next-proof draft and replied "accept" to the complete proposed real-PR trial plan.
+Decision: Approve the read-only method, retained evidence, owner review, success criteria, and stop conditions. Target selection and confirmation of its intended requirements remain pending. Execution is separately authorized; plan acceptance starts no evaluation or experiment.
+Authority: Repository owner
+Affected Components: PROOF-003, BLK-004, current project state, proof register
+Evidence: docs/project/evidence/PROOF-003-real-pr-contract.md
+Reversible? yes, by a later owner decision retaining this approval record
+Supersedes: Only the method/evidence/reviewer/criteria portions of the generic next-contract placeholder; no target, execution, outcome, or promotion authority is supplied.
+Status: ACTIVE
+Revisit Trigger: Owner selects a target, changes the accepted method, or separately authorizes execution.
+```
+
 ## Contradictions Requiring Authority
 
-Both bounded results have owner acceptance with documented limitations. The seed card remains `experimental`/`concept`; neither acceptance supplies independent runtime/isolation proof, real-world outcomes, or a lifecycle-promotion decision. Stronger claims require claim-matched evidence and explicit review. The next proof contract remains `NEEDS_OWNER_INPUT`.
+Both bounded results have owner acceptance with documented limitations. The seed card remains `experimental`/`concept`; neither acceptance supplies independent runtime/isolation proof, real-world outcomes, or a lifecycle-promotion decision. Stronger claims require claim-matched evidence and explicit review. The next trial method is approved; its exact target and confirmed requirements remain `NEEDS_OWNER_INPUT`, and execution remains separately authorized.

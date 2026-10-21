@@ -309,7 +309,15 @@
     {"id": "DEC-005", "status": "ACTIVE", "summary": "The public repository grants no reuse license unless a separate license is added.", "evidence": ["LICENSE", "package.json"]},
     {"id": "DEC-006", "status": "ACTIVE", "summary": "The capability horizon backlog is a non-authoritative option inventory; entries require explicit promotion before they become explorations, roadmap commitments, or canonical capabilities.", "evidence": ["BACKLOG.md", "PROJECT_STATE.md"]},
     {"id": "DEC-007", "status": "ACTIVE", "summary": "Experiment acquisition is preview-first, rejects raw prompt or source flags, and requires explicit retention authorization before writing a proposed record.", "evidence": ["scripts/create-experiment.mjs", "scripts/lib/experiment-intake.mjs", "CONTRIBUTING.md"]},
-    {"id": "DEC-008", "status": "ACTIVE", "summary": "Record owner acceptance of PROOF-002 with documented limitations; close only its disposition blocker, preserve existing lifecycle states, and leave the next proof contract awaiting owner selection.", "evidence": ["docs/project/evidence/EXP-20260924-001-human-disposition.md"]}
+    {"id": "DEC-008", "status": "ACTIVE", "summary": "Record owner acceptance of PROOF-002 with documented limitations; close only its disposition blocker, preserve existing lifecycle states, and leave the next proof contract awaiting owner selection.", "evidence": ["docs/project/evidence/EXP-20260924-001-human-disposition.md"]},
+    {
+      "id": "DEC-009",
+      "status": "ACTIVE",
+      "summary": "Approve the read-only real-PR trial plan while leaving its target unselected, requirements pending confirmation, and execution separately authorized.",
+      "evidence": [
+        "docs/project/evidence/PROOF-003-real-pr-contract.md"
+      ]
+    }
   ],
   "integrations": [
     {"id": "INT-001", "name": "Git", "state": "IMPLEMENTED", "evidence": ["Repository metadata identifies main as the active branch"]},
@@ -360,9 +368,11 @@
     {
       "id": "BLK-004",
       "priority": "P1",
-      "summary": "The next proof contract has not been selected or authorized by the owner.",
+      "summary": "The approved real-PR trial plan still needs an owner-selected target and confirmed target requirements.",
       "evidence": [
-        "PROOF-002 is accepted with limitations; no subsequent workflow, pass/fail criteria, reviewer, or execution authority has been selected."
+        "Owner accepted the read-only real-PR trial method, evidence, reviewer, success criteria, and stop conditions on 2026-10-20.",
+        "docs/project/evidence/PROOF-003-real-pr-contract.md",
+        "No target PR or frozen commit has been selected; target requirements are not yet confirmed and execution remains separately authorized."
       ],
       "affectedGoals": [
         "GOAL-USER",
@@ -375,7 +385,7 @@
         "CAP-004",
         "CAP-011"
       ],
-      "resolutionCondition": "The owner selects and approves a bounded next proof contract, including workflow, evidence requirements, reviewer, and pass/fail conditions.",
+      "resolutionCondition": "Owner identifies the target PR and confirms its frozen scope and intended requirements under the approved plan; trial execution requires separate authorization.",
       "status": "OPEN"
     }
   ],
@@ -444,23 +454,34 @@
       "id": "PROOF-003",
       "status": "NEXT",
       "selectionStatus": "NEEDS_OWNER_INPUT",
-      "name": "Owner selection of the next bounded proof contract",
-      "whyItMatters": "The accepted bounded results leave independence, real-world use, and observed value unverified; the owner must select which claim the next event will test.",
+      "name": "Complete target selection for the approved real-PR proof contract",
+      "whyItMatters": "The owner approved a method to test whether Constraint Compilation exposes a material omission or ambiguity in one real PR; choosing its target is still required before evaluation.",
       "prerequisites": [
-        "Retain the qualified PROOF-002 human disposition",
-        "Review unresolved evidence limits without promoting the technique"
+        "Retain both qualified artifact dispositions and their limitations",
+        "Retain the approved real-PR trial plan",
+        "Owner identifies the target PR, freezes its scope, and confirms intended requirements before evaluation"
       ],
       "acceptanceCriteria": [
-        "Owner selects the bounded workflow and claim to test",
-        "Owner specifies evidence, reviewer, pass/fail conditions, and stop conditions",
+        "Retain owner acceptance of the method, evidence, reviewer, success criteria, and stop conditions",
+        "Owner selects the exact target PR and confirms its frozen scope and intended requirements",
         "Execution remains separately authorized"
       ],
       "requiredEvidence": [
-        "Explicit owner-selected next proof contract"
+        "Approved real-PR plan with owner disposition",
+        "Owner-selected PR, commit SHA, and confirmed requirements"
       ],
       "currentBlockers": [
         "BLK-004"
-      ]
+      ],
+      "planApproval": {
+        "status": "APPROVED",
+        "recordedAt": "2026-10-20",
+        "authority": "Repository owner",
+        "evidence": "docs/project/evidence/PROOF-003-real-pr-contract.md",
+        "scope": "Read-only real-PR trial method approved; target selection and execution remain pending."
+      },
+      "targetStatus": "NEEDS_OWNER_INPUT",
+      "executionStatus": "NOT_AUTHORIZED"
     }
   ],
   "commercialEvidence": [
@@ -470,7 +491,7 @@
   "nextActions": [
     {
       "order": 1,
-      "action": "Obtain owner selection of the next bounded proof contract; workflow, evidence, reviewer, and pass/fail criteria remain NEEDS_OWNER_INPUT.",
+      "action": "Obtain the owner-selected target PR, freeze its scope, and confirm intended requirements under the approved plan; do not start evaluation without separate execution authority.",
       "addresses": [
         "BLK-004"
       ]

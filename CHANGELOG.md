@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Recorded owner approval of the read-only real-PR trial plan and narrowed the next-proof blocker to target selection and requirement confirmation. No trial was started, result accepted, or lifecycle promoted.
+
 - Retained PR #3 merge and successful PR/main GitHub Actions receipts, corrected stale CI uncertainty, and removed the completed publication action. Capability lifecycle states, qualified acceptance limits, and the owner-input requirement for PROOF-003 are unchanged.
 
 - Recorded the owner's acceptance of `PROOF-002` with its documented independence and access-control limitations, closed the disposition blocker, and left the next proof contract awaiting owner selection. Technique lifecycle, evidence level, and unverified outcome claims remain unchanged.

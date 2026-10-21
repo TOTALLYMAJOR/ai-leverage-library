@@ -48,17 +48,17 @@ Finding and reading a technique is implemented through the catalogs and canonica
 
 ## Critical Blockers
 
-- `BLK-004` (P1): the owner has not selected the next proof contract, including workflow, evidence, reviewer, and pass/fail conditions.
+- `BLK-004` (P1): the approved real-PR trial method still needs an owner-selected target and confirmed target requirements; execution remains separately authorized.
 
 `BLK-001` is retained as closed by the qualified owner acceptance; its evidence limitations remain recorded.
 
 ## Next Proof Event
 
-`PROOF-003`: owner selection of the next bounded proof contract. Status: `NEEDS_OWNER_INPUT`; no new experiment or execution has been selected or authorized.
+`PROOF-003`: complete target selection for the [approved read-only real-PR trial plan](evidence/PROOF-003-real-pr-contract.md). Plan: `APPROVED`; target: `NEEDS_OWNER_INPUT`; execution: `NOT_AUTHORIZED`. The owner approved the method, evidence, reviewer, success criteria, and stop conditions, but no trial result exists.
 
 ## Next Actions
 
-1. Obtain owner selection of the next proof contract, including workflow, evidence, reviewer, and pass/fail and stop conditions.
+1. Obtain the owner-selected target PR, freeze its scope, and confirm intended requirements before evaluation. Execution requires separate authorization.
 2. Preserve the qualified acceptances and remaining evidence limitations without automatic promotion.
 
 ## Commercial / Operational Evidence
