@@ -13,7 +13,7 @@ Economic Buyer: UNKNOWN
 Problem Solved: Useful AI workflows are scattered across prompts, demonstrations, and tribal knowledge without reproducible verification or explicit human authority boundaries.
 Current Product Stage: 0.1.0 repository scaffold with one seed technique, tested experiment intake, and two accepted-with-limitations bounded results; product use and organizational value are UNVERIFIED.
 Primary Deployment Target: UNVERIFIED - a static documentation site or PWA is specified, but no provider or deployment configuration exists.
-Last Evidence Reconciliation: 2026-10-20 for owner acceptance of PROOF-002 with documented limitations, closure of its disposition blocker, and explicit owner selection of the next proof contract still pending.
+Last Evidence Reconciliation: 2026-10-20 for qualified PROOF-002 acceptance and approval of the next real-PR trial method; its target and requirements remain pending, with execution separately authorized.
 ```
 
 ## North-Star Goal
@@ -86,7 +86,7 @@ Creating the horizon backlog changes planning visibility, not product capability
 
 ## Critical Blockers
 
-- `BLK-004` (P1): the next proof contract awaits owner selection of its workflow, evidence, reviewer, and pass/fail conditions.
+- `BLK-004` (P1): the approved real-PR trial plan needs an owner-selected target and confirmed target requirements. Execution remains separately authorized.
 
 `BLK-001` is retained as closed: the owner accepted the bounded `PROOF-002`
 result with its limitations. The unresolved runtime and access-control facts
@@ -96,15 +96,15 @@ remain evidence limitations, not an outstanding acceptance request.
 
 **ID:** `PROOF-003`
 
-**Proof Event:** Owner selection of the next bounded proof contract. Selection status: `NEEDS_OWNER_INPUT`; no next experiment has been chosen or authorized.
+**Proof Event:** Complete target selection for the [approved read-only real-PR trial plan](docs/project/evidence/PROOF-003-real-pr-contract.md). Plan status: `APPROVED`; target selection: `NEEDS_OWNER_INPUT`; execution: `NOT_AUTHORIZED`.
 
-**Why It Matters:** Two qualified artifact acceptances leave independence, real-world use, and measured value unverified. The owner must select which claim and workflow the next event will test.
+**Why It Matters:** The approved method will test whether Constraint Compilation helps expose a material omission or ambiguity in one real PR. A concrete target and confirmed requirements are needed before evaluation. Prior evidence limitations remain unchanged.
 
-**Prerequisites:** Retain both artifacts and their qualified human dispositions; review the unresolved evidence limits without promoting the technique.
+**Prerequisites:** Retain both qualified dispositions and the approved plan; obtain the target PR, freeze its scope, and confirm intended requirements with the owner before evaluation.
 
-**Acceptance Criteria:** The owner selects a bounded workflow and claim, names its evidence and reviewer, and sets pass/fail and stop conditions. Execution requires separate authorization.
+**Acceptance Criteria:** Retain owner approval of the method, evidence, reviewer, success criteria, and stop conditions; obtain owner selection of the exact PR and confirmation of its frozen scope and intended requirements. Execution requires separate authorization.
 
-**Required Evidence:** An explicit owner-selected next proof contract.
+**Required Evidence:** The approved plan and owner disposition, plus the selected PR, commit SHA, and confirmed requirements. Plan approval supplies no trial result.
 
 **Current Blockers:** `BLK-004`.
 
@@ -112,7 +112,7 @@ Engineering work is derived backward from this event. Building an adapter does n
 
 ## Next Actions
 
-1. Obtain owner selection of the next bounded proof contract; the workflow, evidence, reviewer, and pass/fail conditions remain `NEEDS_OWNER_INPUT`.
+1. Obtain the target PR, freeze its scope, and confirm its requirements under the approved plan. Evaluation waits for separate execution authority.
 2. Preserve the runtime-identity and access-control limitations, unverified outcomes, and separate promotion authority.
 
 ## Reconciliation Rule

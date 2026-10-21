@@ -15,15 +15,15 @@ Status: CLOSED on 2026-10-20
 Resolution: Repository owner accepted the linked bounded result with its documented limitations. See evidence/EXP-20260924-001-human-disposition.md. Runtime identity and technically enforced broader-filesystem isolation remain unverified.
 ```
 
-## BLK-004 - Next proof contract awaits owner selection
+## BLK-004 - Approved trial plan awaits its target
 
 ```text
 Priority: P1
-Evidence: PROOF-002 is accepted with limitations; no subsequent workflow, evidence threshold, reviewer, or execution authority has been selected.
+Evidence: The owner approved the read-only real-PR trial method, evidence, reviewer, success criteria, and stop conditions on 2026-10-20. See evidence/PROOF-003-real-pr-contract.md. The target PR and commit remain unselected, and intended requirements need confirmation.
 Affected Goal: GOAL-USER; GOAL-ORGANIZATIONAL
 Affected Journey: JOURNEY-PRIMARY
 Dependencies: CAP-004; CAP-011
-Resolution Condition: Owner selects a bounded next proof contract, including workflow, evidence, reviewer, pass/fail conditions, and stop conditions. Execution requires separate authorization.
+Resolution Condition: Owner identifies the target PR and confirms its frozen scope and intended requirements under the approved plan. Execution requires separate authorization.
 Status: OPEN
 ```
 
